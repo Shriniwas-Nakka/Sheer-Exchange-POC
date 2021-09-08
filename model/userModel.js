@@ -28,6 +28,8 @@ const userSchema = new mongoose.Schema(
     profileUrl: {
       type: String,
     },
+    numberOfFollowers: { type: Number, default: 0 },
+    numberOfFollowing: { type: Number, default: 0 },
     role: {
       type: String,
       enum: ["admin", "user", "guest"],
@@ -67,7 +69,7 @@ class UserModel {
               callback(err);
             } else {
               let obj = {
-                _id : result._id,
+                _id: result._id,
                 firstName: result.firstName,
                 lastName: result.lastName,
                 email: result.email,
@@ -77,7 +79,7 @@ class UserModel {
               };
               let token = await jwt.accessToken(obj);
               let data = {
-                _id : result._id,
+                _id: result._id,
                 firstName: result.firstName,
                 lastName: result.lastName,
                 email: result.email,

@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 
 mongoose.connect(
-  "mongodb+srv://Shriniwas:actionpop@cluster0.fduvb.mongodb.net/sheerexchange?retryWrites=true&w=majority",
+  process.env.MONGODB_URI,
   { useNewUrlParser: true, useUnifiedTopology: true },
   (error, data) => {
     if (error) {

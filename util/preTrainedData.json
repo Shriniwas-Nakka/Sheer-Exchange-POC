@@ -1,0 +1,367 @@
+[
+  { "text": "Walking", "category": "RUN" },
+  { "text": "Running", "category": "RUN" },
+  { "text": "Workout 15 minutes", "category": "RUN" },
+  { "text": "Take a Hike", "category": "RUN" },
+  { "text": "Trust Capital seminar", "category": "RUN" },
+  { "text": "Workout", "category": "RUN" },
+  { "text": "Start bullet journal", "category": "RUN" },
+  { "text": "Daily 3", "category": "RUN" },
+  { "text": "Plan the week and plan to celebrate life", "category": "RUN" },
+  { "text": "Glute workout", "category": "RUN" },
+  { "text": "Exercise with kids", "category": "RUN" },
+  { "text": "Go for a walk", "category": "RUN" },
+  { "text": "Sentrum", "category": "RUN" },
+  { "text": "Take a walk", "category": "RUN" },
+  { "text": "Pilates", "category": "RUN" },
+  { "text": "Stradivarius", "category": "RUN" },
+  { "text": "Some sort of exercise", "category": "RUN" },
+  { "text": "Walk Lamu", "category": "RUN" },
+  { "text": "Go see Jenna gallery", "category": "RUN" },
+  { "text": "Go for a run", "category": "RUN" },
+  { "text": "5k step walk.", "category": "RUN" },
+  { "text": "Train armies", "category": "RUN" },
+  { "text": "Take your life stabilizers in the morning", "category": "RUN" },
+  { "text": "Honing your body", "category": "RUN" },
+  { "text": "Train your body", "category": "RUN" },
+  { "text": "Sort your life stabilizers", "category": "RUN" },
+  { "text": "Hone your body", "category": "RUN" },
+  { "text": "Humping Sjaak", "category": "RUN" },
+  { "text": "Jog/Walk or Sit/Stand", "category": "RUN" },
+  { "text": "Order Bra", "category": "RUN" },
+  { "text": "Follow up with RCAB on HRA", "category": "RUN" },
+  { "text": "Download Zombies (Run)", "category": "RUN" },
+  { "text": "Kevin Olsen fitbit FSA", "category": "RUN" },
+  { "text": "Contact Lumina", "category": "RUN" },
+  {
+    "text": "Follow up on rewards for RCAB health insurance",
+    "category": "RUN"
+  },
+  { "text": "Review RCAB benefits", "category": "RUN" },
+  { "text": "Hiking", "category": "RUN" },
+  { "text": "30-Minute Walk", "category": "RUN" },
+  { "text": "Exercise", "category": "RUN" },
+  { "text": "Workout video", "category": "RUN" },
+  { "text": "Go for a Walk", "category": "RUN" },
+  { "text": "Running 10k", "category": "RUN" },
+  { "text": "Perfect butt 1", "category": "RUN" },
+  { "text": "No tea coffee honey sugar", "category": "RUN" },
+  { "text": "Pushups and sqats", "category": "RUN" },
+  { "text": "Plank & burpees", "category": "RUN" },
+  { "text": "Master pack", "category": "RUN" },
+  { "text": "Perfect butt2", "category": "RUN" },
+  { "text": "Master pack butt", "category": "RUN" },
+  { "text": "JFIT", "category": "RUN" },
+  { "text": "Perfect butt 3", "category": "RUN" },
+  { "text": "Hard nut", "category": "RUN" },
+  { "text": "Exercise (Body)", "category": "RUN" },
+  { "text": "Do Crossfit", "category": "RUN" },
+  { "text": "Ritual Matinal", "category": "RUN" },
+  { "text": "Junta UDC", "category": "RUN" },
+  { "text": "Minimalist living room", "category": "RUN" },
+  { "text": "Prepare paper", "category": "BOOK" },
+  { "text": "Preparation Talk", "category": "BOOK" },
+  { "text": "Neurodegeneration Seminar", "category": "BOOK" },
+  { "text": "Biology of Bats", "category": "BOOK" },
+  { "text": "Bat Paper Preparation", "category": "BOOK" },
+  { "text": "Paper Preparation", "category": "BOOK" },
+  { "text": "Complete task assigned by Captain", "category": "BOOK" },
+  { "text": "Read book", "category": "BOOK" },
+  { "text": "School", "category": "BOOK" },
+  { "text": "Drat", "category": "BOOK" },
+  { "text": "Phd", "category": "BOOK" },
+  { "text": "Drt these decision makng", "category": "BOOK" },
+  { "text": "Go get your passport", "category": "BOOK" },
+  { "text": "Read a children book", "category": "BOOK" },
+  { "text": "Read spanish", "category": "BOOK" },
+  { "text": "Flashcards/watch Spanish movie or talk", "category": "BOOK" },
+  { "text": "Options", "category": "BOOK" },
+  { "text": "My dreams", "category": "BOOK" },
+  { "text": "Us prep", "category": "BOOK" },
+  { "text": "A book I love", "category": "BOOK" },
+  { "text": "Print all docs", "category": "BOOK" },
+  { "text": "Relire doc", "category": "BOOK" },
+  {
+    "text": "Write letter to a loved one (wife/husband, family member or friend)",
+    "category": "BOOK"
+  },
+  { "text": "Master", "category": "BOOK" },
+  { "text": "Read drt", "category": "BOOK" },
+  { "text": "I forgive to", "category": "BOOK" },
+  { "text": "My family", "category": "BOOK" },
+  { "text": "Read options", "category": "BOOK" },
+  { "text": "Webinar", "category": "BOOK" },
+  { "text": "Read mwmoire", "category": "BOOK" },
+  { "text": "My morning routine", "category": "BOOK" },
+  { "text": "Grenoble email", "category": "BOOK" },
+  { "text": "See drt grenoble conditions", "category": "BOOK" },
+  { "text": "AFD job", "category": "BOOK" },
+  { "text": "Translate your grocery list", "category": "BOOK" },
+  { "text": "Start a simple journal to brain dump", "category": "BOOK" },
+  {
+    "text": "My opinion about my body and how comfortable I am with it",
+    "category": "BOOK"
+  },
+  { "text": "I love TV show X because", "category": "BOOK" },
+  { "text": "Five things I lust after", "category": "BOOK" },
+  { "text": "My journaling journey was", "category": "BOOK" },
+  { "text": "My favorite animal is", "category": "BOOK" },
+  { "text": "Read the news in the Language", "category": "BOOK" },
+  { "text": "What my future will look like", "category": "BOOK" },
+  { "text": "The weirdest things I like", "category": "BOOK" },
+  {
+    "text": "Read article on creating email course in 2 days",
+    "category": "BOOK"
+  },
+  { "text": "Complete 1st Block of GenM email marketing", "category": "BOOK" },
+  { "text": "WebCD", "category": "BOOK" },
+  { "text": "Finish a book", "category": "BOOK" },
+  { "text": "Science affirmations", "category": "BOOK" },
+  { "text": "MCAT Studying Part 1", "category": "BOOK" },
+  { "text": "Lumosity", "category": "BOOK" },
+  { "text": "Bible Reading", "category": "BOOK" },
+  { "text": "Read a book", "category": "BOOK" },
+  { "text": "Do", "category": "BOOK" },
+  { "text": "Freestyle at", "category": "BOOK" },
+  { "text": "Learn English", "category": "BOOK" },
+  { "text": "Study", "category": "BOOK" },
+  { "text": "Listening audiobook", "category": "BOOK" },
+  { "text": "Take a bath", "category": "BOOK" },
+  { "text": "Review for Sciences and Languages", "category": "BOOK" },
+  { "text": "Book reviews", "category": "BOOK" },
+  { "text": "PR2:. Read on Group Report", "category": "BOOK" },
+  { "text": "AE:  Assignment", "category": "BOOK" },
+  { "text": "Master the Job Search Part 2", "category": "BOOK" },
+  { "text": "Become an Agile Project Manager", "category": "BOOK" },
+  { "text": "Content Marketing Part 1", "category": "BOOK" },
+  { "text": "Master the Job Search Part 1", "category": "BOOK" },
+  { "text": "Content Marketing Part 2", "category": "BOOK" },
+  { "text": "Deutsch", "category": "BOOK" },
+  { "text": "Read for 30 minutes", "category": "BOOK" },
+  { "text": "Study Korean", "category": "BOOK" },
+  { "text": "Learn Korean", "category": "BOOK" },
+  { "text": "Journaling", "category": "BOOK" },
+  { "text": "Duolingo", "category": "BOOK" },
+  { "text": "Planning", "category": "BOOK" },
+  { "text": "Study Chinese", "category": "BOOK" },
+  { "text": "Revise Anki cards", "category": "BOOK" },
+  { "text": "Supplements", "category": "BOOK" },
+  { "text": "Writing", "category": "BOOK" },
+  { "text": "Write 5k", "category": "BOOK" },
+  { "text": "Write 10k", "category": "BOOK" },
+  { "text": "5k words", "category": "BOOK" },
+  { "text": "Write 1k", "category": "BOOK" },
+  { "text": "Forms", "category": "BOOK" },
+  { "text": "Cancel/pause toucanbox", "category": "BOOK" },
+  { "text": "Deliver gay romance!", "category": "BOOK" },
+  { "text": "Read for 30 minutes - irodalom", "category": "BOOK" },
+  { "text": "Read for 30 minutes - pszi", "category": "BOOK" },
+  { "text": "Read for 40 minutes - irodalom", "category": "BOOK" },
+  { "text": "Finished my G.E.D", "category": "BOOK" },
+  { "text": "Finish my G.E.D", "category": "BOOK" },
+  { "text": "News in level", "category": "BOOK" },
+  {
+    "text": "my unit test failed",
+    "category": "software"
+  },
+  {
+    "text": "tried the program, but it was buggy",
+    "category": "software"
+  },
+  {
+    "text": "i need a new power supply",
+    "category": "hardware"
+  },
+  {
+    "text": "the drive has a 2TB capacity",
+    "category": "hardware"
+  },
+  {
+    "text": "unit-tests",
+    "category": "software"
+  },
+  {
+    "text": "program",
+    "category": "software"
+  },
+  {
+    "text": "power supply",
+    "category": "hardware"
+  },
+  {
+    "text": "drive",
+    "category": "hardware"
+  },
+  {
+    "text": "it needs more memory",
+    "category": "hardware"
+  },
+  {
+    "text": "code",
+    "category": "software"
+  },
+  {
+    "text": "i found some bugs in the code",
+    "category": "software"
+  },
+  {
+    "text": "i swapped the memory",
+    "category": "hardware"
+  },
+  {
+    "text": "i tested the code",
+    "category": "software"
+  },
+  {
+    "text": "i love computers",
+    "category": "hardware"
+  },
+  {
+    "text": "programming",
+    "category": "software"
+  },
+  {
+    "text": "i broke my pc",
+    "category": "hardware"
+  },
+  {
+    "text": "computer",
+    "category": "hardware"
+  },
+  {
+    "text": "buy me a laptop",
+    "category": "hardware"
+  },
+  {
+    "text": "i love to play games",
+    "category": "software"
+  },
+  {
+    "text": "i love to watch movies",
+    "category": "entertainment"
+  },
+  {
+    "text": "i like to watch movies",
+    "category": "entertainment"
+  },
+  {
+    "text": "I love a good sassy movie!",
+    "category": "entertainment"
+  },
+  {
+    "text": "We decided to go see a movie.",
+    "category": "entertainment"
+  },
+  {
+    "text": "Want to see a movie?",
+    "category": "entertainment"
+  },
+  {
+    "text": "I think they went to a movie.",
+    "category": "entertainment"
+  },
+  {
+    "text": "I thought you might like to see a movie.",
+    "category": "entertainment"
+  },
+  {
+    "text": "I thought about seeing a movie.",
+    "category": "entertainment"
+  },
+  {
+    "text": "We had fun together.",
+    "category": "fun"
+  },
+  {
+    "text": "Don't make fun of dreams.",
+    "category": "fun"
+  },
+  {
+    "text": "I think they are all having fun with Alex.",
+    "category": "fun"
+  },
+  {
+    "text": "I just thought it would be fun for the man to tell the wife this for once.",
+    "category": "fun"
+  },
+  {
+    "text": "She understands and doesn't make fun of me.",
+    "category": "fun"
+  },
+  {
+    "text": "Have a nice weekend, Deidre.",
+    "category": "fun"
+  },
+  {
+    "text": "Was he making fun of her?",
+    "category": "fun"
+  },
+  {
+    "text": "He was more fun being quiet.",
+    "category": "fun"
+  },
+  {
+    "text": "Do you remember what fun it was?",
+    "category": "fun"
+  },
+  {
+    "text": "Want to play a game?",
+    "category": "sport"
+  },
+  {
+    "text": "Sometimes Alex and Jonathan play soccer, and sometimes we all go for a ride in the buggy.",
+    "category": "sport"
+  },
+  {
+    "text": "Would you like to play a game?",
+    "category": "sport"
+  },
+  {
+    "text": "After lunch, all four of them went outside to play ball.",
+    "category": "sport"
+  },
+  {
+    "text": "I did play with your watch.",
+    "category": "sport"
+  },
+  {
+    "text": "Let's play a duet, then.",
+    "category": "sport"
+  },
+  {
+    "text": "He was in the play, Boo!",
+    "category": "sport"
+  },
+  {
+    "text": "I didn't know you played football.",
+    "category": "sport"
+  },
+  {
+    "text": "The club is always looking for volunteers, especially for coaches to assist with basketball, softball, football and baseball.",
+    "category": "sport"
+  },
+  {
+    "text": "Was it a team sport like playing baseball?",
+    "category": "sport"
+  },
+  {
+    "text": "I did play with your watch.",
+    "category": "sport"
+  },
+  {
+    "text": "Let's play a duet, then.",
+    "category": "sport"
+  },
+  {
+    "text": "He was in the play, Boo!",
+    "category": "sport"
+  },
+  {
+    "text": "I didn't know you played football.",
+    "category": "sport"
+  },
+  {
+    "text": "The club is always looking for volunteers, especially for coaches to assist with basketball, softball, football and baseball.",
+    "category": "sport"
+  }
+]

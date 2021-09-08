@@ -2,6 +2,7 @@ const route = require("express").Router();
 const pollPostController = require("../controller/pollPostController");
 const userController = require("../controller/userController");
 const authentication = require("../middleware/middleware");
+const hashtagController = require("../controller/hashtagController");
 
 route.post(
   "/pollpost",
@@ -64,8 +65,16 @@ route.get(
   pollPostController.pollPostReportController
 );
 
-/**User */
+/**
+ * User
+ * */
 route.post("/user/signUp", userController.signUpUserController);
 route.post("/user/signIn", userController.signInUserController);
+
+/**
+ * Hashtag
+ * */
+route.post("/hashtag", hashtagController.createHashTag);
+route.get("/category", hashtagController.getHashTagCategory);
 
 module.exports = route;

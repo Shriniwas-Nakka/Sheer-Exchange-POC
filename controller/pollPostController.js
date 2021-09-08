@@ -39,8 +39,10 @@ class PollPostController {
   };
 
   readPollPostsController = (req, res, next) => {
-    console.log(req.token);
-    pollPostModel.read((error, data) => {
+    let data = {
+      userId: req.token._id,
+    };
+    pollPostModel.read(data, (error, data) => {
       if (error) {
         response.status = false;
         response.message = error.message;
@@ -196,7 +198,7 @@ class PollPostController {
       pollQuestionId: req.body.pollQuestionId,
       pollOptionId: req.body.pollOptionId,
     };
-    console.log(data);
+    // console.log(data);
     pollPostModel.pollAnswer(data, (error, data) => {
       if (error) {
         response.status = false;

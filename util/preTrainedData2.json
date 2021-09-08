@@ -1,0 +1,1886 @@
+[
+  {
+    "id": 1,
+    "category": "crime",
+    "headline": "There Were 2 Mass Shootings In Texas Last Week, But Only 1 On TV",
+    "short_description": "She left her husband. He killed their children. Just another day in America."
+  },
+  {
+    "id": 2,
+    "category": "entertainment",
+    "headline": "Will Smith Joins Diplo And Nicky Jam For The 2018 World Cup's Official Song",
+    "short_description": "Of course it has a song."
+  },
+  {
+    "id": 3,
+    "category": "entertainment",
+    "headline": "Hugh Grant Marries For The First Time At Age 57",
+    "short_description": "The actor and his longtime girlfriend Anna Eberstein tied the knot in a civil ceremony."
+  },
+  {
+    "id": 4,
+    "category": "entertainment",
+    "headline": "Jim Carrey Blasts 'Castrato' Adam Schiff And Democrats In New Artwork",
+    "short_description": "The actor gives Dems an ass-kicking for not fighting hard enough against Donald Trump."
+  },
+  {
+    "id": 5,
+    "category": "entertainment",
+    "headline": "Julianna Margulies Uses Donald Trump Poop Bags To Pick Up After Her Dog",
+    "short_description": "The \"Dietland\" actress said using the bags is a \"really cathartic, therapeutic moment.\""
+  },
+  {
+    "id": 6,
+    "category": "entertainment",
+    "headline": "Morgan Freeman 'Devastated' That Sexual Harassment Claims Could Undermine Legacy",
+    "short_description": "\"It is not right to equate horrific incidents of sexual assault with misplaced compliments or humor,\" he said in a statement."
+  },
+  {
+    "id": 7,
+    "category": "entertainment",
+    "headline": "Donald Trump Is Lovin' New McDonald's Jingle In 'Tonight Show' Bit",
+    "short_description": "It's catchy, all right."
+  },
+  {
+    "id": 8,
+    "category": "entertainment",
+    "headline": "What To Watch On Amazon Prime That’s New This Week",
+    "short_description": "There's a great mini-series joining this week."
+  },
+  {
+    "id": 9,
+    "category": "entertainment",
+    "headline": "Mike Myers Reveals He'd 'Like To' Do A Fourth Austin Powers Film",
+    "short_description": "Myer's kids may be pushing for a new \"Powers\" film more than anyone."
+  },
+  {
+    "id": 10,
+    "category": "entertainment",
+    "headline": "What To Watch On Hulu That’s New This Week",
+    "short_description": "You're getting a recent Academy Award-winning movie."
+  },
+  {
+    "id": 11,
+    "category": "entertainment",
+    "headline": "Justin Timberlake Visits Texas School Shooting Victims",
+    "short_description": "The pop star also wore a \"Santa Fe Strong\" shirt at his show in Houston."
+  },
+  {
+    "id": 12,
+    "category": "world news",
+    "headline": "South Korean President Meets North Korea's Kim Jong Un To Talk Trump Summit",
+    "short_description": "The two met to pave the way for a summit between North Korean and the U.S."
+  },
+  {
+    "id": 13,
+    "category": "impact",
+    "headline": "With Its Way Of Life At Risk, This Remote Oyster-Growing Region Called In Robots",
+    "short_description": "The revolution is coming to rural New Brunswick."
+  },
+  {
+    "id": 14,
+    "category": "politics",
+    "headline": "Trump's Crackdown On Immigrant Parents Puts More Kids In An Already Strained System",
+    "short_description": "Last month a Health and Human Services official revealed the government was unable to locate nearly 1,500 children who had been released from its custody."
+  },
+  {
+    "id": 15,
+    "category": "politics",
+    "headline": "'Trump's Son Should Be Concerned': FBI Obtained Wiretaps Of Putin Ally Who Met With Trump Jr.",
+    "short_description": "The wiretaps feature conversations between Alexander Torshin and Alexander Romanov, a convicted Russian money launderer."
+  },
+  {
+    "id": 16,
+    "category": "politics",
+    "headline": "Edward Snowden: There's No One Trump Loves More Than Vladimir Putin",
+    "short_description": "But don't count on Robert Mueller to nail him, the NSA whistleblower warns."
+  },
+  {
+    "id": 17,
+    "category": "politics",
+    "headline": "Booyah: Obama Photographer Hilariously Trolls Trump's 'Spy' Claim",
+    "short_description": "Just a peeping minute."
+  },
+  {
+    "id": 18,
+    "category": "politics",
+    "headline": "Ireland Votes To Repeal Abortion Amendment In Landslide Referendum",
+    "short_description": "Irish women will no longer have to travel to the United Kingdom to end their pregnancies."
+  },
+  {
+    "id": 19,
+    "category": "politics",
+    "headline": "Ryan Zinke Looks To Reel Back Some Critics With 'Grand Pivot' To Conservation",
+    "short_description": "The interior secretary attempts damage control with hunting and fishing groups that didn’t like his fossil fuel focus."
+  },
+  {
+    "id": 20,
+    "category": "politics",
+    "headline": "Trump's Scottish Golf Resort Pays Women Significantly Less Than Men: Report",
+    "short_description": "And there are four times as many male as female executives."
+  },
+  {
+    "id": 21,
+    "category": "weird news",
+    "headline": "Weird Father's Day Gifts Your Dad Doesn't Know He Wants (But He Does)",
+    "short_description": "Why buy a boring tie when you can give him testicle plush toys?"
+  },
+  {
+    "id": 22,
+    "category": "entertainment",
+    "headline": "Twitter #PutStarWarsInOtherFilms And It Was Universally Entertaining",
+    "short_description": "There's no such thing as too much \"Star Wars.\""
+  },
+  {
+    "id": 23,
+    "category": "weird news",
+    "headline": "Mystery 'Wolf-Like' Animal Reportedly Shot In Montana, Baffles Wildlife Officials",
+    "short_description": "“We have no idea what this was until we get a DNA report back.\""
+  },
+  {
+    "id": 24,
+    "category": "world news",
+    "headline": "North Korea Still Open To Talks After Trump Cancels Summit",
+    "short_description": "Trump’s announcement came after repeated threats by North Korea to pull out of the summit over what it saw as confrontational remarks by U.S. officials."
+  },
+  {
+    "id": 25,
+    "category": "world news",
+    "headline": "2 Men Detonate Bomb Inside Indian Restaurant Near Toronto, Authorities Say",
+    "short_description": "Fifteen people were taken to the hospital, three of them with critical injuries."
+  },
+  {
+    "id": 26,
+    "category": "world news",
+    "headline": "Thousands Travel Home To Ireland To Vote On Abortion Access",
+    "short_description": "Just try to read these #HomeToVote tweets without crying."
+  },
+  {
+    "id": 27,
+    "category": "world news",
+    "headline": "Irish Voters Set To Liberalize Abortion Laws In Landslide, Exit Poll Signals",
+    "short_description": "Vote counting will begin Saturday."
+  },
+  {
+    "id": 28,
+    "category": "black voices",
+    "headline": "Warriors Coach Steve Kerr Calls NFL Ban On Protests 'Fake Patriotism'",
+    "short_description": "Forbidding players to take a knee during the national anthem is “idiotic,” the coach said."
+  },
+  {
+    "id": 29,
+    "category": "black voices",
+    "headline": "In Historic Victory, Barbados Elects First Female Prime Minister",
+    "short_description": "Mia Amor Mottley even earned the backing of the country's most recognizable national: Rihanna."
+  },
+  {
+    "id": 30,
+    "category": "black voices",
+    "headline": "Police Killed At Least 378 Black Americans From The Moment Colin Kaepernick Protested",
+    "short_description": "These Americans deserve to be more than another statistic."
+  },
+  {
+    "id": 31,
+    "category": "politics",
+    "headline": "Jack Johnson Was Pardoned, But Taboo Sex Is Still Being Criminalized",
+    "short_description": "A new law to fight sex trafficking targets some of the people it ostensibly aims to protect."
+  },
+  {
+    "id": 32,
+    "category": "black voices",
+    "headline": "BET Chairman and CEO Debra Lee Is Stepping Down",
+    "short_description": "Lee brought more original shows to the black entertainment network and focused on family programming."
+  },
+  {
+    "id": 33,
+    "category": "crime",
+    "headline": "Rachel Dolezal Faces Felony Charges For Welfare Fraud",
+    "short_description": "State prosecutors say almost $84,000 had been deposited into her bank account while she was receiving public assistance."
+  },
+  {
+    "id": 34,
+    "category": "politics",
+    "headline": "Bishop Michael Curry Joins Christian March To White House To 'Reclaim Jesus'",
+    "short_description": "For Curry and others, being Christian means rejecting white nationalism and misogyny, while protecting immigrants, refugees and the poor."
+  },
+  {
+    "id": 35,
+    "category": "entertainment",
+    "headline": "Kanye West Spent $85,000 On Photo Of Whitney Houston's Bathroom For Album Cover",
+    "short_description": "Pusha T's album, produced by West, features a photo of the late singer's bathroom."
+  },
+  {
+    "id": 36,
+    "category": "women",
+    "headline": "Morgan Freeman Dropped From Marketing Campaigns After Harassment Accusations",
+    "short_description": "Both Visa and Vancouver's public transit system have suspended work with him."
+  },
+  {
+    "id": 37,
+    "category": "politics",
+    "headline": "How The Chinese Exclusion Act Can Help Us Understand Immigration Politics Today",
+    "short_description": "The Chinese Exclusion Act barely gets mentioned in U.S. history classes. A new PBS documentary from directors Ric Burns and Li-Shin Yu could change that."
+  },
+  {
+    "id": 38,
+    "category": "comedy",
+    "headline": "Trump's New 'MAGA'-Themed Swimwear Sinks On Twitter",
+    "short_description": "\"Does this swimsuit make me look racist?\""
+  },
+  {
+    "id": 39,
+    "category": "comedy",
+    "headline": "Seth Meyers Has 1 Funny Regret After Trump Cancels North Korea Summit",
+    "short_description": "There goes the one token of his appreciation."
+  },
+  {
+    "id": 40,
+    "category": "comedy",
+    "headline": "Colbert Wants To Turn NYC Subway Rides Into A New And Terrible Punishment",
+    "short_description": "The \"Late Show\" host takes on Michael Cohen and his \"taxi king\" business partner."
+  },
+  {
+    "id": 41,
+    "category": "crime",
+    "headline": "Man Faces Charges After Pulling Knife, Stun Gun On Muslim Students At McDonald's",
+    "short_description": "“We thought we were going to die,\" one of the students said."
+  },
+  {
+    "id": 42,
+    "category": "comedy",
+    "headline": "Jimmy Kimmel Knows Why Iran's Supreme Leader Watches 'Tom And Jerry'",
+    "short_description": "The host reimagined the cartoon after Ayatollah Ali Khamenei brought up the cat and mouse in defiance of U.S. threats."
+  },
+  {
+    "id": 43,
+    "category": "crime",
+    "headline": "2 People Injured In Indiana School Shooting",
+    "short_description": "A male student, believed to be the suspect, has been detained, according to police."
+  },
+  {
+    "id": 44,
+    "category": "entertainment",
+    "headline": "People Are Rattled By How Much This Nigerian Man Looks Like Chadwick Boseman",
+    "short_description": "Suleiman Abdulfatai looks like he could be the actor's long-lost brother."
+  },
+  {
+    "id": 45,
+    "category": "entertainment",
+    "headline": "David Cross Proves Yet Again That He’s Terrible At Apologizing",
+    "short_description": "The comedian suggested Jessica Walter was also abusive on set after saying he’d apologize for defending Jeffrey Tambor."
+  },
+  {
+    "id": 46,
+    "category": "entertainment",
+    "headline": "'Sesame Street' Creators Sue Makers Of Upcoming Adult-Themed Puppet Film",
+    "short_description": "“The Happytime Murders” refers to the classic show in its tagline."
+  },
+  {
+    "id": 47,
+    "category": "entertainment",
+    "headline": "What You Missed About The Saddest Death In 'Avengers: Infinity War'",
+    "short_description": "Directors Joe and Anthony Russo answer our most pressing questions."
+  },
+  {
+    "id": 48,
+    "category": "entertainment",
+    "headline": "George Takei Accuser Walks Back Story Of Drugging And Sexual Assault",
+    "short_description": "The \"Star Trek\" actor was accused of groping a model 36 years ago."
+  },
+  {
+    "id": 49,
+    "category": "entertainment",
+    "headline": "Samantha Bee's Parents Think America Is Basically A War Zone",
+    "short_description": "Her dad even sent her a Kevlar vest."
+  },
+  {
+    "id": 50,
+    "category": "entertainment",
+    "headline": "Pete Davidson Says His Mental Illness Doesn't Ruin Romance",
+    "short_description": "The \"SNL\" star reacted to criticism that he shouldn't date Ariana Grande because of his borderline personality disorder."
+  },
+  {
+    "id": 51,
+    "category": "entertainment",
+    "headline": "James Corden And Adam Levine Get Pulled Over During 'Carpool Karaoke'",
+    "short_description": "It was bound to happen."
+  },
+  {
+    "id": 52,
+    "category": "entertainment",
+    "headline": "Emilia Clarke Dishes On Her Final 'Game Of Thrones' Scene",
+    "short_description": "Now we're really curious about the farewell season."
+  },
+  {
+    "id": 53,
+    "category": "entertainment",
+    "headline": "Hollywood Doesn't Need 'Difficult' Men To Make Great TV",
+    "short_description": "\"Crazy Ex-Girlfriend's\" Vella Lovell pushes back on what old-school male actors see as the \"norm.\""
+  },
+  {
+    "id": 54,
+    "category": "entertainment",
+    "headline": "Harvey Weinstein Accusers Say They Never Thought He Would Be Arrested",
+    "short_description": "Some of the actresses who came forward with sexual assault claims against the once powerful Hollywood mogul responded with both surprise and relief."
+  },
+  {
+    "id": 55,
+    "category": "entertainment",
+    "headline": "Harvey Weinstein Turns Himself In To Police For Alleged Sex Crimes",
+    "short_description": "The bombshell sexual harassment accusations against Weinstein sparked the Me Too movement."
+  },
+  {
+    "id": 56,
+    "category": "entertainment",
+    "headline": "John Mayer's Weird New Low-Budget Video Is A Meme-Worthy Masterpiece",
+    "short_description": "Mayer's hilariously strange \"New Light\" video even spells his name wrong."
+  },
+  {
+    "id": 57,
+    "category": "entertainment",
+    "headline": "Now Boba Fett Is Getting His Own 'Star Wars' Movie",
+    "short_description": "An Obi-Wan Kenobi film is also reportedly in development."
+  },
+  {
+    "id": 58,
+    "category": "world news",
+    "headline": "Trump Suggests North Korea Summit Could Still Happen",
+    "short_description": "He had canceled the planned June 12 summit less than a day earlier."
+  },
+  {
+    "id": 59,
+    "category": "politics",
+    "headline": "Roger Stone Pressed For Damaging Emails About Hillary Clinton From WikiLeaks: Report",
+    "short_description": "Stone's contact with Julian Assange reportedly told him he couldn't ask WikiLeaks favors \"every other day.\""
+  },
+  {
+    "id": 60,
+    "category": "politics",
+    "headline": "Publix Suspends Contributions To NRA-Backed Politician Amid Protests",
+    "short_description": "\"Publix knows we're not going away,\" one gun-control activist said."
+  },
+  {
+    "id": 61,
+    "category": "politics",
+    "headline": "Twitter Bots May Have Delivered Donald Trump's Victory, Research Paper Says",
+    "short_description": "“Our results suggest that, given narrow margins of victories in each vote, bots’ effect was likely marginal but possibly large enough to affect the outcomes.\""
+  },
+  {
+    "id": 62,
+    "category": "weird news",
+    "headline": "A Bag Of Wet Socks Is Apparently Living In The White House Press Briefing Room",
+    "short_description": "\"The formerly wet bag of socks... has become crusty,\" tweeted a reporter who thrice spotted the socks."
+  },
+  {
+    "id": 63,
+    "category": "politics",
+    "headline": "A Member Of The Far-Right Proud Boys Menaced A Twitter User On His Doorstep",
+    "short_description": "A videographer made fun of the far-right extremist group online, so they showed up at his house."
+  },
+  {
+    "id": 64,
+    "category": "politics",
+    "headline": "All The Things The NRA Has Blamed For The Texas School Shooting",
+    "short_description": "Godlessness. Too many doors in schools. Ritalin. Guess what's not on the list?"
+  },
+  {
+    "id": 65,
+    "category": "politics",
+    "headline": "Here's What Happens When A Catholic Hospital Won't Try To Save You",
+    "short_description": "Catholic hospital systems are pushing Trump to expand “conscience rights” – even though faith-based medicine has nearly killed some of their patients."
+  },
+  {
+    "id": 66,
+    "category": "politics",
+    "headline": "Trump's New Executive Orders Make It Easier To Fire Federal Workers",
+    "short_description": "Unions denounced the president's actions an “assault on democracy.”"
+  },
+  {
+    "id": 67,
+    "category": "impact",
+    "headline": "Monsanto And Bayer Are Set To Merge. Here's Why You Should Care.",
+    "short_description": "“Together they will influence markets all over the world on a scale we’ve never seen before.”"
+  },
+  {
+    "id": 68,
+    "category": "women",
+    "headline": "The Joy Of Watching Harvey Weinstein’s Perp Walk",
+    "short_description": "There's a delicious schadenfreude in seeing a powerful abuser finally held accountable."
+  },
+  {
+    "id": 69,
+    "category": "women",
+    "headline": "The 20 Funniest Tweets From Women This Week",
+    "short_description": "\"Welcome to adulthood. You have a favorite spatula now.\""
+  },
+  {
+    "id": 70,
+    "category": "queer voices",
+    "headline": "'Queer Eye' Star Bobby Berk Gave Me A Desk Makeover -- And It Was Incredible",
+    "short_description": "Can you believe?"
+  },
+  {
+    "id": 71,
+    "category": "queer voices",
+    "headline": "Older Gay Men Try Out 'New Gay' Slang In This Hilarious Video",
+    "short_description": "“You guys are watching too much RuPaul.”"
+  },
+  {
+    "id": 72,
+    "category": "queer voices",
+    "headline": "How 'RuPaul’s Drag Race' Is Teaching Straight People About Queer Culture",
+    "short_description": "Mainstream pop culture isn’t the only thing to potentially benefit from the show’s continued prominence."
+  },
+  {
+    "id": 73,
+    "category": "weird news",
+    "headline": "Fish Market Buys Freedom For Fred The 70-Pound Octopus",
+    "short_description": "The market owner won't sell octopus products after playing hide-and-seek with a friendly cephalopod."
+  },
+  {
+    "id": 74,
+    "category": "world news",
+    "headline": "North Korea Threatens Again To Call Off Trump Summit, Warns Of ‘Nuclear Showdown’",
+    "short_description": "A top Pyongyang official lambasted \"political dummy\" Mike Pence and cautioned the U.S. against making \"ignorant\" remarks."
+  },
+  {
+    "id": 75,
+    "category": "world news",
+    "headline": "Investigation Finds Russian Missile Shot Down Flight MH17",
+    "short_description": "It's not clear who was operating the missile that hit the plane over eastern Ukraine in 2014, killing 298 people."
+  },
+  {
+    "id": 76,
+    "category": "world news",
+    "headline": "North Korea Demolishes Tunnels At Nuclear Test Site, Reports Say",
+    "short_description": "North Korea has conducted all six of its nuclear tests at the Punggye-ri site."
+  },
+  {
+    "id": 77,
+    "category": "world news",
+    "headline": "How Kim Jong Un ‘Baited’ Trump Into Canceling The North Korea Summit",
+    "short_description": "Trump’s slapdash attempt at negotiations has left the U.S. isolated from its Asian allies."
+  },
+  {
+    "id": 78,
+    "category": "politics",
+    "headline": "Michelle Obama Reveals Cover For Upcoming Memoir 'Becoming'",
+    "short_description": "\"The process of writing this book has been so personally meaningful and illuminating for me.\""
+  },
+  {
+    "id": 79,
+    "category": "comedy",
+    "headline": "'Late Night' Writer's Breathless Royal Wedding Recap Is The Only One You Need",
+    "short_description": "“Then he bites his lip, like, ‘Hmm, girl.’”"
+  },
+  {
+    "id": 80,
+    "category": "women",
+    "headline": "Morgan Freeman Accused Of Inappropriate Behavior And Sexual Harassment",
+    "short_description": "Eight people told CNN that they were victims of harassment and inappropriate behavior by the actor."
+  },
+  {
+    "id": 81,
+    "category": "sports",
+    "headline": "Jets Chairman Christopher Johnson Won't Fine Players For Anthem Protests",
+    "short_description": "“I never want to put restrictions on the speech of our players.\""
+  },
+  {
+    "id": 82,
+    "category": "entertainment",
+    "headline": "Andy Cohen And Taylor Swift Are Over Their Katy Perry Drama",
+    "short_description": "No \"Bad Blood\" here."
+  },
+  {
+    "id": 83,
+    "category": "entertainment",
+    "headline": "'Infinity War' Writers Try To Clear Up Marvel's Problematic Timeline",
+    "short_description": "Stephen McFeely and Christopher Markus clarify when Thanos may have acquired the Infinity Gauntlet."
+  },
+  {
+    "id": 84,
+    "category": "entertainment",
+    "headline": "David Blaine Chews Glass And Lets James Corden Puncture His Cheek",
+    "short_description": "Sure it's gross, but you're still here."
+  },
+  {
+    "id": 85,
+    "category": "entertainment",
+    "headline": "Amy Poehler: A 'Parks And Recreation' Revival Would Be 'Amazing'",
+    "short_description": "Co-star Nick Offerman also seemed on board... under one (incredible) condition."
+  },
+  {
+    "id": 86,
+    "category": "comedy",
+    "headline": "Colbert Exposes The Biggest Flaw In Trump’s Latest Conspiracy Theory",
+    "short_description": "Colbert follows Trump \"down the rabbit hole.\""
+  },
+  {
+    "id": 87,
+    "category": "comedy",
+    "headline": "Seth Meyers Gives Donald Trump Some Valuable Marketing Advice",
+    "short_description": "“Stop trying to make ‘Fetch’ happen.\""
+  },
+  {
+    "id": 88,
+    "category": "business",
+    "headline": "U.S. Launches Auto Import Probe, China Vows To Defend Its Interests",
+    "short_description": "The investigation could lead to new U.S. tariffs similar to those imposed on imported steel and aluminum in March."
+  },
+  {
+    "id": 89,
+    "category": "black voices",
+    "headline": "This Women Pulled Out All The Stops To Land Her Dream Job",
+    "short_description": "Jessica Bain scored the black history and culture fellowship at Spotify."
+  },
+  {
+    "id": 90,
+    "category": "black voices",
+    "headline": "Wife Asked Husband For Fenty Highlighter And Got a Pack Of Highlighters, Hairbrush",
+    "short_description": "Charlema Webb's husband thought she meant actual pen-to-paper highlighters."
+  },
+  {
+    "id": 91,
+    "category": "politics",
+    "headline": "Trump Roasted For Rushing To Defend Tomi Lahren While Ignoring Real Victims",
+    "short_description": "\"Trump's more concerned about Tomi Lahren being splashed with water than Flint still being entirely without safe water.\""
+  },
+  {
+    "id": 92,
+    "category": "politics",
+    "headline": "Trump Abruptly Cancels North Korea Summit With Kim Jong Un",
+    "short_description": "Trump cited North Korea’s “tremendous anger and open hostility” in calling off the June 12 Singapore meeting."
+  },
+  {
+    "id": 93,
+    "category": "politics",
+    "headline": "Devin Nunes-Linked Winery Faced Suit Over Alleged Coke And Prostitute Yacht Party",
+    "short_description": "The lawmaker is reportedly one of at least 50 investors in the winery, though the company said they were not involved in the party."
+  },
+  {
+    "id": 94,
+    "category": "politics",
+    "headline": "Immigrant Children Accuse Border Patrol Of Abuse And Neglect, Report Shows",
+    "short_description": "One 16-year-old filed a complaint alleging that a Border Patrol agent \"threw him down and smashed his head into the ground with his boot.\""
+  },
+  {
+    "id": 95,
+    "category": "politics",
+    "headline": "Ireland's Historic Vote On Legalizing Abortion Is Haunted By Trump And Brexit",
+    "short_description": "American influence could tip the referendum."
+  },
+  {
+    "id": 96,
+    "category": "politics",
+    "headline": "Trump Lawyer Attended DOJ Meeting On Confidential FBI Informant",
+    "short_description": "Emmet Flood, the White House attorney dealing with the Russia probe, was present at a controversial DOJ meeting about the investigation."
+  },
+  {
+    "id": 97,
+    "category": "politics",
+    "headline": "Senate Advances Court Pick Who Said Planned Parenthood 'Kills Over 150,000 Females A Year’",
+    "short_description": "Every Republican on the judiciary committee voted for Wendy Vitter."
+  },
+  {
+    "id": 98,
+    "category": "politics",
+    "headline": "Rudy Giuliani: Trump Won't Interview With Mueller Until We Get ‘Spygate’ Report",
+    "short_description": "The canceled North Korea summit doesn’t mean the president will be talking to the special counsel anytime soon."
+  },
+  {
+    "id": 99,
+    "category": "politics",
+    "headline": "Kentucky Attorney Running For Judge Dies 1 Day After Primary Win",
+    "short_description": "Danny Alvarez, a married of father of three, was vying for Jefferson County District Court judge in Louisville."
+  },
+  {
+    "id": 100,
+    "category": "politics",
+    "headline": "Chrissy Teigen Taunts Donald Trump Over Twitter Blocking Ruling",
+    "short_description": "Other tweeters, including Mexico's former president Vicente Fox, also poked fun at Trump over the news."
+  },
+  {
+    "id": 101,
+    "category": "politics",
+    "headline": "The Koch Network Is Going After One Of Trump’s Favorite Congressmen",
+    "short_description": "The billionaire Koch brothers’ political network wants to show it will punish Republicans who don’t support its agenda."
+  },
+  {
+    "id": 102,
+    "category": "sports",
+    "headline": "Trump Posthumously Pardons Boxer Jack Johnson",
+    "short_description": "The pardoning of the black heavyweight boxer is only the third posthumous pardon in U.S. history."
+  },
+  {
+    "id": 103,
+    "category": "entertainment",
+    "headline": "Ellen Tears Up When Ashton Kutcher Donates $4 Million To Her Wildlife Fund",
+    "short_description": "She even got to personally push the button to transfer the funds."
+  },
+  {
+    "id": 104,
+    "category": "entertainment",
+    "headline": "Ariana Grande Reveals Bee Tattoo In Honor Of The Manchester Attack",
+    "short_description": "The bee is the symbol of the city and is incorporated into the Manchester coat of arms."
+  },
+  {
+    "id": 105,
+    "category": "entertainment",
+    "headline": "Kim Kardashian Wished Kanye West A Happy Anniversary And, Fine, It's Pretty Cute",
+    "short_description": "\"4 years down and forever to go....\""
+  },
+  {
+    "id": 106,
+    "category": "entertainment",
+    "headline": "Chris Hemsworth Dances 'Wrecking Ball' With His Kids In The Living Room",
+    "short_description": "What a god."
+  },
+  {
+    "id": 107,
+    "category": "entertainment",
+    "headline": "Moses Farrow Defends Woody Allen And Accuses Mia Farrow Of Abuse",
+    "short_description": "Dylan Farrow called her brother's essay \"beyond hurtful\" and \"easily disproven.\""
+  },
+  {
+    "id": 108,
+    "category": "entertainment",
+    "headline": "Gwyneth Paltrow Says Brad Pitt Threatened To Kill Harvey Weinstein",
+    "short_description": "The film producer allegedly made advances on her years ago, but her then-boyfriend made sure it didn't happen again."
+  },
+  {
+    "id": 109,
+    "category": "entertainment",
+    "headline": "Stephen King Reveals Why Donald Trump Blocked Him On Twitter",
+    "short_description": "The horror master also took on \"creepy\" Mike Pence: \"He has that look.\""
+  },
+  {
+    "id": 110,
+    "category": "entertainment",
+    "headline": "Fans Back Jessica Walter After She Addressed Verbal Harassment By Jeffrey Tambor",
+    "short_description": "\"We should be grieving with Jessica Walter. That shouldn't have happened to her.\""
+  },
+  {
+    "id": 111,
+    "category": "entertainment",
+    "headline": "Jessica Walter Discusses Jeffrey Tambor's Alleged Harassment While Male Co-Stars Brush It Off",
+    "short_description": "\"In like almost 60 years of working, I’ve never had anybody yell at me like that on a set,\" the actress said."
+  },
+  {
+    "id": 112,
+    "category": "entertainment",
+    "headline": "Harvey Weinstein Expected To Turn Himself In To The NYPD For Sex Crimes",
+    "short_description": "Authorities in New York have been investigating the former producer for alleged sexual abuse and harassment."
+  },
+  {
+    "id": 113,
+    "category": "comedy",
+    "headline": "Samantha Bee Torches ICE: 'Let's Shut It The F**k Down'",
+    "short_description": "\"I’m serious. It’s awful. And we don’t actually need it.\""
+  },
+  {
+    "id": 114,
+    "category": "politics",
+    "headline": "Scott Pruitt Twice Introduced Anti-Abortion Bills Giving Men ‘Property Rights’ Over Fetuses",
+    "short_description": "Before he was Trump's embattled EPA chief, Pruitt was a state politician who backed draconian abortion restrictions."
+  },
+  {
+    "id": 115,
+    "category": "politics",
+    "headline": "Twitter Critics Mercilessly Mock Trump For Canceling Summit With Kim",
+    "short_description": "\"Pot meet kettle.\""
+  },
+  {
+    "id": 116,
+    "category": "politics",
+    "headline": "Civil Rights Groups Rip Senate Bill Revising Its Own Sexual Harassment Policy",
+    "short_description": "The bill would let lawmakers hide past offenses and only be punished for \"severe or pervasive\" harassment, the ACLU said."
+  },
+  {
+    "id": 117,
+    "category": "politics",
+    "headline": "Alabama Sues To Exclude Undocumented Immigrants From Census Count",
+    "short_description": "Legal experts say the suit has some big flaws."
+  },
+  {
+    "id": 118,
+    "category": "politics",
+    "headline": "Cynthia Nixon Vows To Keep Fighting After (Predictably) Losing Party Endorsement",
+    "short_description": "She plans to get the required number of petition signatures to make it onto the ballot."
+  },
+  {
+    "id": 119,
+    "category": "politics",
+    "headline": "White House Officials Reportedly Considered Just 'Ignoring' New Climate Research",
+    "short_description": "An internal memo obtained by The Washington Post offers a glimpse into the challenges faced by the Trump administration on the issue of climate change."
+  },
+  {
+    "id": 120,
+    "category": "politics",
+    "headline": "Read Trump's Letter To Kim Jong Un Canceling North Korea Summit",
+    "short_description": "Basically: \"It's not me, it's you.\""
+  },
+  {
+    "id": 121,
+    "category": "world news",
+    "headline": "South Korea Responds To Trump's Sudden Cancellation Of Kim Jong Un Summit",
+    "short_description": "\"We are attempting to make sense of what, precisely, President Trump means.\""
+  },
+  {
+    "id": 122,
+    "category": "politics",
+    "headline": "Facebook's New Ad Rules Prove It's Basically In Charge Of Regulating Elections Now",
+    "short_description": "Sure, this seems like the kind of thing a private company should be in charge of. Welcome to the Facebook Election Commission."
+  },
+  {
+    "id": 123,
+    "category": "politics",
+    "headline": "Border Agent Fatally Shoots Migrant Woman In Texas",
+    "short_description": "“Why did you shoot at the girl? You killed her!” a bystander asks in viral video that shows the aftermath of the shooting."
+  },
+  {
+    "id": 124,
+    "category": "politics",
+    "headline": "Trump Opens Door For U.S. Gun Industry To Sell More Firearms Abroad",
+    "short_description": "Senators and human rights groups worry the proposed rule changes will export the U.S. gun violence epidemic."
+  },
+  {
+    "id": 125,
+    "category": "politics",
+    "headline": "'Stormy Daniels Day' Declared In West Hollywood As Adult Star Gets Key To City",
+    "short_description": "The California city recognized her as a “national figure in the resistance to the Trump Administration.\""
+  },
+  {
+    "id": 126,
+    "category": "impact",
+    "headline": "You're Going To Use That Self-Checkout Machine Whether You Like It Or Not",
+    "short_description": "We may not realize it, but retailers are conditioning us to be our own cashiers."
+  },
+  {
+    "id": 127,
+    "category": "travel",
+    "headline": "14 Ways To Make Family Road Trips Easier, From Parents Who've Been There",
+    "short_description": "Having waterproof covers on the seats is kind of brilliant."
+  },
+  {
+    "id": 128,
+    "category": "media",
+    "headline": "Jake Tapper Shreds Donald Trump With A Long List Of His Conspiracy Theories",
+    "short_description": "\"I could go on, but this is just an hour show.\""
+  },
+  {
+    "id": 129,
+    "category": "media",
+    "headline": "New York Daily News Rips NFL Over Anthem Kneeling Ban",
+    "short_description": "\"NFL DISHONORS THE FLAG\""
+  },
+  {
+    "id": 130,
+    "category": "politics",
+    "headline": "A Judge Ruled One Immigrant Had A Right To A Hearing. What About All The Others?",
+    "short_description": "The Supreme Court will likely have to determine whether indefinite detention without a bond hearing violates the Constitution."
+  },
+  {
+    "id": 131,
+    "category": "politics",
+    "headline": "House Democrats Offer Internships For Students Affected By Gun Violence",
+    "short_description": "“It’s important that we learn from their experience.\""
+  },
+  {
+    "id": 132,
+    "category": "queer voices",
+    "headline": "Tig Notaro Tells Ellen DeGeneres About Her Sons' Passion For Trash",
+    "short_description": "The comedian also \"can't wait\" to play Jennifer Aniston's wife on \"First Ladies.\""
+  },
+  {
+    "id": 133,
+    "category": "queer voices",
+    "headline": "Stormy Daniels Thanks ‘Wonderful Gay Dads’ As West Hollywood Hands Her Keys To City",
+    "short_description": "West Hollywood has also reaffirmed its commitment to being a sanctuary city, opposing the administration’s enforcement of extreme immigration laws."
+  },
+  {
+    "id": 134,
+    "category": "queer voices",
+    "headline": "Can You Believe? Queer Eye Season 2 Drops Next Month",
+    "short_description": "It's slated to hit Netflix on June 15th."
+  },
+  {
+    "id": 135,
+    "category": "queer voices",
+    "headline": "Gay Man Denied Marriage License By Kim Davis Loses Bid To Unseat Her",
+    "short_description": "Despite support from Amy Schumer and Susan Sarandon, David Ermold won't challenge Davis this fall."
+  },
+  {
+    "id": 136,
+    "category": "sports",
+    "headline": "Anna Kournikova Dancing With Her Bouncing Baby Is The Cutest Thing",
+    "short_description": "The score is love-love."
+  },
+  {
+    "id": 137,
+    "category": "sports",
+    "headline": "Trump Says NFL Players Unwilling To Stand For Anthem Maybe 'Shouldn't Be In The Country'",
+    "short_description": "\"I don’t think people should be staying in locker rooms,\" Trump told Fox News. \"You have to stand proudly for the national anthem or you shouldn’t be playing.\""
+  },
+  {
+    "id": 138,
+    "category": "tech",
+    "headline": "Facebook Accused Of Reading Texts And Accessing Microphones In Lawsuit",
+    "short_description": "A failed startup suggested that Facebook mounted what could be described as mass surveillance."
+  },
+  {
+    "id": 139,
+    "category": "tech",
+    "headline": "Self-Driving Uber In Fatal Accident Had 6 Seconds To React Before Crash",
+    "short_description": "The NTSB published a preliminary report on the incident Thursday."
+  },
+  {
+    "id": 140,
+    "category": "weird news",
+    "headline": "Amazon Admits Alexa Device Eavesdropped On Portland Family",
+    "short_description": "“Unplug your Alexa devices right now. You’re being hacked.”"
+  },
+  {
+    "id": 141,
+    "category": "weird news",
+    "headline": "Man Discovers Handgun Impaled In Front Bumper Of Car",
+    "short_description": "The driver kept going after a mysterious object struck his car."
+  },
+  {
+    "id": 142,
+    "category": "weird news",
+    "headline": "Rescue Cat Has Hilarious Wide-Eyed Expression After Scan Confirms She Is Pregnant",
+    "short_description": "😻😻😻"
+  },
+  {
+    "id": 143,
+    "category": "weird news",
+    "headline": "Weirdest Promposals Of 2018 Include Teen Who Faked His Own Birth",
+    "short_description": "The things people do for love. Or at least for prom."
+  },
+  {
+    "id": 144,
+    "category": "world news",
+    "headline": "Trump And The American Far Right Stoke Hate In Canada",
+    "short_description": "Hate crimes have increased, extremist groups are growing, and two mass killings shocked the country."
+  },
+  {
+    "id": 145,
+    "category": "world news",
+    "headline": "Far-Right And Anti-Establishment Parties Set To Form Italy's New Government",
+    "short_description": "Italy is on track to have one of the most radical and populist governments in all of Europe."
+  },
+  {
+    "id": 146,
+    "category": "entertainment",
+    "headline": "Sarah Silverman Sees No Reason Why Louis C.K. Can't Continue Being An Artist",
+    "short_description": "\"He’s my brother, so it’s hard. I may not have a very clear perspective on it, but I’m trying to.”"
+  },
+  {
+    "id": 147,
+    "category": "religion",
+    "headline": "Southern Baptist Leader Who Said Abused Women Should Just Pray Is Removed From Post",
+    "short_description": "Paige Patterson was demoted to president emeritus after thousands of evangelical women signed a petition calling for his ouster."
+  },
+  {
+    "id": 148,
+    "category": "queer voices",
+    "headline": "More Americans Than Ever Support Same-Sex Marriage",
+    "short_description": "It seems the current administration doesn't speak for most Americans when it comes to LGBTQ rights."
+  },
+  {
+    "id": 149,
+    "category": "entertainment",
+    "headline": "Brynn Cartelli Becomes Youngest-Ever Winner Of 'The Voice'",
+    "short_description": "The TV singing competition's new champion just turned 15."
+  },
+  {
+    "id": 150,
+    "category": "politics",
+    "headline": "Betsy DeVos Stirs Uproar By Saying Schools Can Call ICE On Undocumented Kids",
+    "short_description": "The education secretary said it's a local decision, but she didn't argue against it."
+  },
+  {
+    "id": 151,
+    "category": "politics",
+    "headline": "6 Sandy Hook Families, FBI Agent Sue Alex Jones For Defamation",
+    "short_description": "The lawsuit is the latest of several targeting the Infowars conspiracy theorist."
+  },
+  {
+    "id": 152,
+    "category": "politics",
+    "headline": "High School Teacher Defeats Kentucky House Majority Leader In GOP Primary",
+    "short_description": "The upset comes after widespread teacher protests over pension and education budget cuts."
+  },
+  {
+    "id": 153,
+    "category": "politics",
+    "headline": "Lupe Valdez Makes History In Texas By Winning Democratic Nod For Governor",
+    "short_description": "The former sheriff ― the first Latina nominated for Texas governor by a major party ― now faces GOP Gov. Greg Abbott."
+  },
+  {
+    "id": 154,
+    "category": "politics",
+    "headline": "Report: Michael Cohen's Business Partner Cooperating With Prosecutors",
+    "short_description": "Evgeny Freidman has been Cohen’s partner in the taxi business for years."
+  },
+  {
+    "id": 155,
+    "category": "sports",
+    "headline": "Brandi Chastain Totally Agrees Her Hall Of Fame Plaque Looks Nothing Like Her",
+    "short_description": "Was it supposed to be Gary Busey or Mickey Rooney?"
+  },
+  {
+    "id": 156,
+    "category": "science",
+    "headline": "Scientists Turn To DNA Technology To Search For Loch Ness Monster",
+    "short_description": "The researchers plan to scour the Loch Ness next month for evidence of its supposed inhabitant."
+  },
+  {
+    "id": 157,
+    "category": "comedy",
+    "headline": "'Late Night' Writer Vows To 'Take Red Hats Back' From Trump Supporters",
+    "short_description": "\"When people see me -- a portly, soft-chinned white male -- wearing a red hat from a distance, they assume the worst.\""
+  },
+  {
+    "id": 158,
+    "category": "comedy",
+    "headline": "Julia Louis-Dreyfus To Receive 2018 Mark Twain Prize for American Humor",
+    "short_description": "\"Well, this is insanely exciting,\" the actress said about the news."
+  },
+  {
+    "id": 159,
+    "category": "black voices",
+    "headline": "Michelle Obama Shares Intimate Wedding Photo In Tribute To Husband Barack",
+    "short_description": "She’s paying tribute to Barack Obama and their 25-year marriage with a sweet photo from their 1992 wedding."
+  },
+  {
+    "id": 160,
+    "category": "black voices",
+    "headline": "Did You Spot Trevor Noah In 'Black Panther'? The 'Daily Show' Host's Stealth Cameo Revealed",
+    "short_description": "There’s a reason the voice of Shuri’s artificial intelligence computer system sounded so familiar — at least to those who routinely watch Comedy Central."
+  },
+  {
+    "id": 161,
+    "category": "black voices",
+    "headline": "Donald Glover Fans Execute Stunning Coup On Donald Trump-Themed Reddit Forum",
+    "short_description": "\"The One True Donald.\""
+  },
+  {
+    "id": 162,
+    "category": "black voices",
+    "headline": "T.I. Calls For Boycott Of Restaurant After Off-Duty Cop Allegedly Assaults 3 Black Women",
+    "short_description": "The officer, working as a security guard, is accused of punching one woman in the head, then holding her and another woman to the ground."
+  },
+  {
+    "id": 163,
+    "category": "world news",
+    "headline": "Survivor Of Rwandan Genocide To Be Country's First Female Neurosurgeon",
+    "short_description": "Dr. Claire Karekezi says the genocide is what made her understand that \"we cannot count on anyone but ourselves.\""
+  },
+  {
+    "id": 164,
+    "category": "politics",
+    "headline": "Stacey Abrams Wins Democratic Primary For Georgia Governor",
+    "short_description": "If elected, the former party leader in the state legislature would be the nation’s first black female governor."
+  },
+  {
+    "id": 165,
+    "category": "comedy",
+    "headline": "Trevor Noah Reveals The Question He’d Ask Donald Trump That No Else Has Dared To",
+    "short_description": "Under $1 million?"
+  },
+  {
+    "id": 166,
+    "category": "black voices",
+    "headline": "Michelle Obama Reflects On ‘Scary’ Time At Princeton With Sweet Throwback Snap",
+    "short_description": "\"I was black and from a working-class neighborhood in Chicago, while Princeton’s student body was generally white and well-to-do.\""
+  },
+  {
+    "id": 167,
+    "category": "entertainment",
+    "headline": "‘13 Reasons Why’ Started A Conversation. Who’s Responsible For Finishing It?",
+    "short_description": "Two stomach-churning events, featured back-to-back in the last episode, have divided viewers."
+  },
+  {
+    "id": 168,
+    "category": "entertainment",
+    "headline": "Lourdes Leon Gives Us Major Madonna Vibes In Moody New Ad Campaign Pics",
+    "short_description": "We will always think of Madonna‘s daughter Lourdes “Lola” Leon as this big-eyed little beauty."
+  },
+  {
+    "id": 169,
+    "category": "entertainment",
+    "headline": "5 Ways Netflix Tricks You Into Watching More Shows And Movies",
+    "short_description": "It's both impressive and kind of scary."
+  },
+  {
+    "id": 170,
+    "category": "entertainment",
+    "headline": "Brad Pitt Made Ryan Reynolds Do One Demeaning Thing In Exchange For 'Deadpool 2' Cameo",
+    "short_description": "It wasn’t a prank, per se. That’s Pitt-Clooney ground."
+  },
+  {
+    "id": 171,
+    "category": "entertainment",
+    "headline": "Robert De Niro Bans Trump From Every Nobu Restaurant",
+    "short_description": "\"If he walked into a restaurant I was in, I’d walk out.\""
+  },
+  {
+    "id": 172,
+    "category": "entertainment",
+    "headline": "Ariana Grande Shuts Down Fan Blaming Her For ‘Heartbreaking’ Mac Miller Split",
+    "short_description": "The singer called their two-year relationship \"toxic\" and \"scary.\""
+  },
+  {
+    "id": 173,
+    "category": "entertainment",
+    "headline": "Parents Slam 'Show Dogs' Scenes As Grooming Children For Sexual Abuse",
+    "short_description": "Multiple scenes in which a dog’s genitals are groped have sparked criticism."
+  },
+  {
+    "id": 174,
+    "category": "entertainment",
+    "headline": "Dave Grohl Wants To Apologize To The World For ‘Massive Jerk’ Trump",
+    "short_description": "The Foo Fighters star said he's ashamed of the president."
+  },
+  {
+    "id": 175,
+    "category": "entertainment",
+    "headline": "Emilia Clarke Introduced Herself To Prince William In A Pretty Embarrassing Way",
+    "short_description": "Oops!"
+  },
+  {
+    "id": 176,
+    "category": "entertainment",
+    "headline": "Sarah Paulson Takes Impressions To Next Level On 'Tonight Show'",
+    "short_description": "The \"Ocean's 8\" star delivered in imitating Drew Barrymore and a dolphin."
+  },
+  {
+    "id": 177,
+    "category": "entertainment",
+    "headline": "The B-52s Are Still Ready To Party. And Be Taken Seriously.",
+    "short_description": "\"Love Shack\" became a hit nearly 30 years ago. Singer Kate Pierson reveals how the song came to be."
+  },
+  {
+    "id": 178,
+    "category": "politics",
+    "headline": "Gina Ortiz Jones Wins Democratic Runoff In Texas Congressional Race",
+    "short_description": "The Iraq War veteran will now face GOP Rep. Will Hurd in November. She'll make history if she wins."
+  },
+  {
+    "id": 179,
+    "category": "politics",
+    "headline": "Fighter Pilot Amy McGrath Wins Democratic Primary In Kentucky Swing District",
+    "short_description": "McGrath's victory continues the success women and political newcomers have found in Democratic primaries."
+  },
+  {
+    "id": 180,
+    "category": "politics",
+    "headline": "Trump Rallies Conservatives With Promise Of More Abortion Curbs",
+    "short_description": "The president, who just unveiled new restrictions on abortion services, sought the support of anti-abortion activists at Susan B. Anthony List's annual gala."
+  },
+  {
+    "id": 181,
+    "category": "politics",
+    "headline": "The ACLU Is Suing To Strike Down Ohio's Congressional Map",
+    "short_description": "The civil liberties group says Ohio's map is so heavily gerrymandered, it violates the Constitution."
+  },
+  {
+    "id": 182,
+    "category": "politics",
+    "headline": "The Latest School Shooting Hasn't Really Stirred The Gun Debate",
+    "short_description": "Santa Fe, unlike Parkland, doesn't seem to be significantly driving new calls for gun control."
+  },
+  {
+    "id": 183,
+    "category": "entertainment",
+    "headline": "Donald Trump Tweet Rescues 'Roseanne' And Family In Season Finale",
+    "short_description": "“The president spelled ‘Illinois’ wrong in his tweet, but it still counts, right?”"
+  },
+  {
+    "id": 184,
+    "category": "entertainment",
+    "headline": "Ellen Grills Mark Wahlberg About His Shirtless Instagram Selfies",
+    "short_description": "“I get ‘Dad, put a shirt on,’ all the time,” the actor explained."
+  },
+  {
+    "id": 185,
+    "category": "entertainment",
+    "headline": "Idris Elba To Star As The New Hunchback Of Notre Dame For Netflix",
+    "short_description": "The classic story is getting a modern re-telling with original music."
+  },
+  {
+    "id": 186,
+    "category": "crime",
+    "headline": "Maryland Police Charge 3 Church Leaders With Past Abuse Of At-Risk Teen Girls",
+    "short_description": "The victims, who are now adults, were enrolled in a church-run program designed to give troubled teens a safe place to live."
+  },
+  {
+    "id": 187,
+    "category": "sports",
+    "headline": "NFL Bans Kneeling During The National Anthem",
+    "short_description": "Teams can set their own policies for punishing players."
+  },
+  {
+    "id": 188,
+    "category": "comedy",
+    "headline": "Conan O'Brien Muscles In On The Royal Wedding With His Own Spoof Ads",
+    "short_description": "\"Notice anything different about this royal wedding?\""
+  },
+  {
+    "id": 189,
+    "category": "politics",
+    "headline": "House Republicans Report Progress On An Immigration Deal",
+    "short_description": "But they might need a reality check."
+  },
+  {
+    "id": 190,
+    "category": "politics",
+    "headline": "Democrats Weren't Invited To Review Classified Documents On FBI Informant",
+    "short_description": "Republicans have been demanding a look at documents about whether Obama planted a spy in the Trump campaign."
+  },
+  {
+    "id": 191,
+    "category": "politics",
+    "headline": "GOP Candidate Who Pointed Gun At Teenager Advances To Georgia Governor Primary Runoff",
+    "short_description": "In an ad, Brian Kemp said he would round up undocumented immigrants and \"take them home myself.\""
+  },
+  {
+    "id": 192,
+    "category": "weird news",
+    "headline": "Walking Definition Of An Entitled Millennial Swears He's Not An Entitled Millennial",
+    "short_description": "Michael Rotondo was court-ordered to move out of his parents’ home."
+  },
+  {
+    "id": 193,
+    "category": "politics",
+    "headline": "Democrats Push To Be Included In Classified Briefing On FBI Informant",
+    "short_description": "The top Democratic leaders warned a Republicans-only meeting would set a bad precedent for the Justice Department."
+  },
+  {
+    "id": 194,
+    "category": "impact",
+    "headline": "Machines Don't Always Steal Our Jobs. Increasingly, They Rob Our Work Of Humanity.",
+    "short_description": "Your next boss could be an algorithm"
+  },
+  {
+    "id": 195,
+    "category": "politics",
+    "headline": "Trump Praises Tomi Lahren After Restaurant Crowd Tosses Water, Insults",
+    "short_description": "The president hailed the Fox News pundit as a “respected young woman.”"
+  },
+  {
+    "id": 196,
+    "category": "politics",
+    "headline": "Sarah Sanders: It 'Bothers Me' Being Called A Liar",
+    "short_description": "Except the White House press secretary gives false and misleading information all the time."
+  },
+  {
+    "id": 197,
+    "category": "politics",
+    "headline": "Trump Blocking People On Twitter Is Unconstitutional, Judge Rules",
+    "short_description": "The president's Twitter feed is a \"public forum,\" the judge found."
+  },
+  {
+    "id": 198,
+    "category": "politics",
+    "headline": "A Mostly Non-Christian Militia Won 2 Of Iraqi Christians' Parliamentary Seats. Now Christians Want Trump To Intervene.",
+    "short_description": "The Babylon Brigade is led by a Christian but is tied to the brutal Iranian-backed Muslim paramilitary Badr Organization."
+  },
+  {
+    "id": 199,
+    "category": "politics",
+    "headline": "Tulsi Gabbard's Syria Views Cost Her Support Of Hawaii Teachers Union",
+    "short_description": "The state's fourth-largest union had backed the Democratic congresswoman two years ago."
+  },
+  {
+    "id": 200,
+    "category": "politics",
+    "headline": "Jared Kushner Received His Security Clearance: Reports",
+    "short_description": "The president's son-in-law had been using a temporary security clearance while the FBI performed a background check."
+  },
+  {
+    "id": 201,
+    "category": "politics",
+    "headline": "Arizona GOP Congressional Candidate Compares Abortion To Holocaust",
+    "short_description": "“The callousness that our country has for life is very disturbing,\" GOP candidate Wendy Rogers said."
+  },
+  {
+    "id": 202,
+    "category": "politics",
+    "headline": "Gun Reform Advocate Lucy McBath Heads To Runoff For Georgia House Seat",
+    "short_description": "McBath, whose son was shot dead in 2012, will be facing businessman Kevin Abel in a Democratic primary runoff on July 24."
+  },
+  {
+    "id": 203,
+    "category": "weird news",
+    "headline": "'Star Wars' Burlesque Show Storms West Coast With Sexy Stormtroopers",
+    "short_description": "Finding a guy tall enough to play Chewbacca who could dance was a challenge, according to the director."
+  },
+  {
+    "id": 204,
+    "category": "politics",
+    "headline": "Establishment-Backed Moderate Wins Heated Democratic House Primary In Texas",
+    "short_description": "Lawyer Lizzie Fletcher beat progressive activist Laura Moser in a district Democrats hope to take from the GOP."
+  },
+  {
+    "id": 205,
+    "category": "politics",
+    "headline": "Senators Unveil Bill To Crack Down On Their Sexual Harassment",
+    "short_description": "It would require lawmakers to pay out of pocket for their misconduct, which some Republicans fought for months."
+  },
+  {
+    "id": 206,
+    "category": "travel",
+    "headline": "14 Trips To Take From New York City On A Long Weekend",
+    "short_description": "Charming towns, relaxing beaches and top hiking destinations await."
+  },
+  {
+    "id": 207,
+    "category": "travel",
+    "headline": "Disney Reveals Opening Seasons For 'Star Wars' Theme Park Lands",
+    "short_description": "Star Wars: Galaxy's Edge will open at Disneyland before Disney World."
+  },
+  {
+    "id": 208,
+    "category": "comedy",
+    "headline": "The Latest Entries From The Comedy Wildlife Photo Awards Will Cheer You Up",
+    "short_description": "These goofy animals are just like us."
+  },
+  {
+    "id": 209,
+    "category": "comedy",
+    "headline": "Bad Lip Reading Reveals What Was Really Said At The Royal Wedding",
+    "short_description": "\"I have a surprise for you. It’s a golden unicycle.\""
+  },
+  {
+    "id": 210,
+    "category": "world news",
+    "headline": "Australian Archbishop Convicted Of Covering Up Child Sex Abuse",
+    "short_description": "Archbishop Philip Wilson knew about the abuse of four boys dating back to the 1970s and did nothing."
+  },
+  {
+    "id": 211,
+    "category": "world news",
+    "headline": "Commander Says Iran’s People Will Respond To Pompeo's Threats With A Punch In The Mouth",
+    "short_description": "A senior Iranian military commander poured scorn on U.S. threats to tighten sanctions."
+  },
+  {
+    "id": 212,
+    "category": "world news",
+    "headline": "Mark Zuckerberg Extends Facebook Apology Tour With European Gig",
+    "short_description": "He was warned he might be \"the genius that created a digital monster that is destroying our democracies.\""
+  },
+  {
+    "id": 213,
+    "category": "entertainment",
+    "headline": "Ariana Grande Tweets Message Of Support On Manchester Bombing Anniversary",
+    "short_description": "\"Thinking of you all today and every day.\""
+  },
+  {
+    "id": 214,
+    "category": "entertainment",
+    "headline": "Katy Perry Says She's 'Not Single' On 'American Idol'",
+    "short_description": "So that means she and Orlando Bloom are definitely on again -- right?"
+  },
+  {
+    "id": 215,
+    "category": "black voices",
+    "headline": "'Before You Call The Cops' On Him, Watch His Powerful Monologue On Racism",
+    "short_description": "\"I hate that anyone at all might possibly be afraid of me.\""
+  },
+  {
+    "id": 216,
+    "category": "black voices",
+    "headline": "Amazon Is Selling Cops Its Facial Recognition Tool. That’s A Bad, Potentially Racist Move.",
+    "short_description": "Facial recognition software often does not properly identify darker-skinned people."
+  },
+  {
+    "id": 217,
+    "category": "entertainment",
+    "headline": "Miley Cyrus Comes In Like A Wrecking Ball To Prank A Sleeping Jimmy Kimmel",
+    "short_description": "Yeah, she wrecked him. In the balls."
+  },
+  {
+    "id": 218,
+    "category": "entertainment",
+    "headline": "Vanessa Bayer Feared Doing The 'Porn Stars' Skit With Donald Trump On 'SNL'",
+    "short_description": "Trump is accused of having an affair with former porn star Stormy Daniels in 2006."
+  },
+  {
+    "id": 219,
+    "category": "entertainment",
+    "headline": "Adam Rippon Wins 'Dancing With The Stars' Because It Was Destined",
+    "short_description": "Skills and showmanship, people."
+  },
+  {
+    "id": 220,
+    "category": "entertainment",
+    "headline": "Emilia Clarke Should Never Try To Imitate Chewbacca Ever Again",
+    "short_description": "The \"Solo\" star's Wookiee mistake is pretty hilarious."
+  },
+  {
+    "id": 221,
+    "category": "entertainment",
+    "headline": "Maddie Poppe Wins 'American Idol' After Runner-Up Reveals They're Dating",
+    "short_description": "\"I win either way,\" second-place finisher Caleb Lee Hutchinson said."
+  },
+  {
+    "id": 222,
+    "category": "comedy",
+    "headline": "Colbert Just Can’t Resist Turning Trump’s Nickname Into A Pee Tape Joke",
+    "short_description": "He tried not to. He really did."
+  },
+  {
+    "id": 223,
+    "category": "comedy",
+    "headline": "Seth Meyers Is Forced To Tweak Donald Trump's Latest Twitter Rant For Time",
+    "short_description": "\"It’s not fair that a president who won’t read a two-page press briefing makes us read a six-part Twitter rant.\""
+  },
+  {
+    "id": 224,
+    "category": "black voices",
+    "headline": "Boy Says Teacher Told Him It Will Be His Fault When Police Shoot Him At Age 16",
+    "short_description": "Malachi Pearson's story resonated with people of color on Twitter, who shared their own heartbreaking experiences of racism at school."
+  },
+  {
+    "id": 225,
+    "category": "black voices",
+    "headline": "Cops Accused Of Racism After Detaining Black Man Over 'Vegetation'",
+    "short_description": "\"If you want to see a video of racial profiling, this is the poster child right here,\" an attorney said."
+  },
+  {
+    "id": 226,
+    "category": "black voices",
+    "headline": "White Cop Shouts At Black Suspect: 'Pretend Like We're Going To Shoot You'",
+    "short_description": "\"There is no excuse for such threatening statements,\" an ACLU attorney said."
+  },
+  {
+    "id": 227,
+    "category": "crime",
+    "headline": "Florida Police Report 2 Dead After Standoff At Panama City Apartment Complex",
+    "short_description": "The gunman was found dead after soaking his apartment in gasoline."
+  },
+  {
+    "id": 228,
+    "category": "entertainment",
+    "headline": "Donald Glover Is On Board With Lando Calrissian's Pansexuality In 'Solo'",
+    "short_description": "\"How can you not be pansexual in space?\" he said."
+  },
+  {
+    "id": 229,
+    "category": "entertainment",
+    "headline": "Charlize Theron To Play Megyn Kelly In Film About Roger Ailes",
+    "short_description": "The film has reportedly been in the works since before the former network CEO's death last year."
+  },
+  {
+    "id": 230,
+    "category": "politics",
+    "headline": "Shoppers Boycott Publix Over Store's Donations To NRA-Backed Candidate",
+    "short_description": "Adam Putnam, a self-described \"NRA sellout\" running for Florida governor, received $670,000 from the company."
+  },
+  {
+    "id": 231,
+    "category": "politics",
+    "headline": "Bill De Blasio Tells NYPD To Stop Arresting People For Smoking Pot On The Street",
+    "short_description": "The recommendation comes days after the Manhattan district attorney pledged to stop prosecuting low-level marijuana cases."
+  },
+  {
+    "id": 232,
+    "category": "politics",
+    "headline": "DHS Head Says She’s Still, Somehow, Unaware Of Intel On Russia Interference To Boost Trump",
+    "short_description": "A publicly available 2017 assessment from the intelligence community concluded that Russia meddled in the 2016 election with a preference for Donald Trump."
+  },
+  {
+    "id": 233,
+    "category": "politics",
+    "headline": "Lawmaker Introduces Crowdfunding Bill To Pay For Trump's Border Wall",
+    "short_description": "So Mexico's not paying for it?"
+  },
+  {
+    "id": 234,
+    "category": "politics",
+    "headline": "GOP Lawmakers Will Soon Be Allowed To Review Classified Info On Russia Investigation",
+    "short_description": "Trump wants to know whether an FBI informant infiltrated his campaign for political purposes."
+  },
+  {
+    "id": 235,
+    "category": "entertainment",
+    "headline": "James Corden Reveals The Worst Part Of The Royal Wedding Ceremony",
+    "short_description": "And how he almost embarrassed himself on a global scale."
+  },
+  {
+    "id": 236,
+    "category": "entertainment",
+    "headline": "Ariana Grande Reportedly Dating 'SNL' Star Pete Davidson",
+    "short_description": "Both recently broke it off with their long-term partners."
+  },
+  {
+    "id": 237,
+    "category": "entertainment",
+    "headline": "Jim Carrey Pens New Pledge Of Allegiance For Students In Bullet-Riddled Schools",
+    "short_description": "\"...with butchery and injustice for the most innocent of all.\""
+  },
+  {
+    "id": 238,
+    "category": "entertainment",
+    "headline": "Ellen Gets David Spade To Open Up About Dating Younger Women",
+    "short_description": "The comedian had a few thoughts on the royal wedding too."
+  },
+  {
+    "id": 239,
+    "category": "comedy",
+    "headline": "Ceasefire Over? Jimmy Kimmel Shreds Sean Hannity And ‘Those Dummies On Fox & Friends’",
+    "short_description": "The \"Jimmy Kimmel Live\" host says they'd believe in lizard people... if Trump said it first."
+  },
+  {
+    "id": 240,
+    "category": "comedy",
+    "headline": "Spoof Royal Wedding Video Sees Ceremony Taking A Very Different Turn",
+    "short_description": "This is royally funny."
+  },
+  {
+    "id": 241,
+    "category": "politics",
+    "headline": "The Georgia GOP Governor's Primary Focuses On Guns And Immigration",
+    "short_description": "And here's a look at other key races in Tuesday's voting in four states."
+  },
+  {
+    "id": 242,
+    "category": "queer voices",
+    "headline": "GLAAD's Movie Report Finds Troubling Drop In LGBTQ Representation",
+    "short_description": "2017 had the lowest percentage of queer movie characters in five years."
+  },
+  {
+    "id": 243,
+    "category": "queer voices",
+    "headline": "Sephora Now Offers In-Store Beauty Classes For Trans, Nonbinary Community",
+    "short_description": "This inclusivity is G-L-A-M-O-R-O-U-S."
+  },
+  {
+    "id": 244,
+    "category": "politics",
+    "headline": "Georgia Governor’s Primary Highlights Competing Visions For The Democratic Party",
+    "short_description": "The contest between Stacey Abrams and Stacey Evans is a battle of divergent political strategies."
+  },
+  {
+    "id": 245,
+    "category": "politics",
+    "headline": "California Moves To Let Schools, Co-workers 'Red Flag' Dangerous Gun Owners",
+    "short_description": "The bill would expand the list of those who can petition to take away firearms beyond family, roommates and police."
+  },
+  {
+    "id": 246,
+    "category": "politics",
+    "headline": "Talking Grievance And Health Care, An Outsider Kentucky Dem Found The Inside Track",
+    "short_description": "Retired fighter pilot Amy McGrath’s upstart primary campaign thinks it's found a way to talk to disaffected voters."
+  },
+  {
+    "id": 247,
+    "category": "politics",
+    "headline": "There Are Some Problems With This Commemorative Trump-Kim Jong Un Coin",
+    "short_description": "The coin’s depiction of Trump with the North Korean dictator has been called inappropriate and un-American."
+  },
+  {
+    "id": 248,
+    "category": "politics",
+    "headline": "Giuliani’s New Stance On Russian Collusion: So What? It’s Not Illegal.",
+    "short_description": "“It was sort of like a gift,\" Giuliani said of the Clinton campaign material stolen by Russia. \"And you’re not involved in the illegality of getting it.”"
+  },
+  {
+    "id": 249,
+    "category": "politics",
+    "headline": "The Onion Hilariously Trolls Michael Cohen With His Own Cease-And-Desist Note",
+    "short_description": "\"The article is an absolutely disgusting piece that lacks any place in journalism; even in your Onion.”"
+  },
+  {
+    "id": 250,
+    "category": "politics",
+    "headline": "Democrats Want To Boost School Funding To Address Teacher Walkouts",
+    "short_description": "Their agenda would steer $100 billion toward schools and salaries and guarantee teachers' right to join unions."
+  },
+  {
+    "id": 251,
+    "category": "politics",
+    "headline": "But Her Emails? Lawmakers Shrug Off Trump’s Lax Cellphone Security",
+    "short_description": "“I suspect the president of the United States is sophisticated enough to know what he should or shouldn’t be talking about on an unsecured line,” Sen. Jim Risch said."
+  },
+  {
+    "id": 252,
+    "category": "weird news",
+    "headline": "We Try Stink Bug-Flavored Jelly Bellys So You Don't Have To",
+    "short_description": "Tastes as good as it sounds (unfortunately)."
+  },
+  {
+    "id": 253,
+    "category": "weird news",
+    "headline": "Power Outage Triggers 'Extreme Zombie Activity' Alert In Florida City",
+    "short_description": "They have a warning prepped for this?"
+  },
+  {
+    "id": 254,
+    "category": "politics",
+    "headline": "Congress Does Wall Street A Favor As Banks Post Record Profits",
+    "short_description": "Lawmakers have passed a bill to roll back regulations adopted after the 2008 financial crisis."
+  },
+  {
+    "id": 255,
+    "category": "politics",
+    "headline": "White House Sinkhole Probably Metaphor For Something",
+    "short_description": "One person wondered if the hole was Melania's escape tunnel."
+  },
+  {
+    "id": 256,
+    "category": "politics",
+    "headline": "Reporter Shoved, Others Barred From EPA Meeting On Water Contaminants",
+    "short_description": "Add this to the long, ever-growing list of scandals for the EPA chief."
+  },
+  {
+    "id": 257,
+    "category": "politics",
+    "headline": "Garry Kasparov: Donald Trump Has More Russian Connections Than Aeroflot",
+    "short_description": "The chess champ and dissident sounds the gong again on Vladimir Putin's manipulation of U.S. democracy."
+  },
+  {
+    "id": 258,
+    "category": "travel",
+    "headline": "Lonely Planet's Top European Destinations Of 2018 Take Aim At Overtourism",
+    "short_description": "These underrated travel destinations in Europe won't be full of tourists."
+  },
+  {
+    "id": 259,
+    "category": "latino voices",
+    "headline": "Attorney Aaron Schlossberg Insists Anti-Spanish Rant 'Is Not The Person I Am'",
+    "short_description": "In the apology, Aaron Schlossberg claims he moved to New York because of all the diversity."
+  },
+  {
+    "id": 260,
+    "category": "media",
+    "headline": "'60 Minutes' Reporter Reveals Trump's Chilling Reason For Slamming The Press",
+    "short_description": "Lesley Stahl said Trump admitted that he attacks journalists so \"no one will believe\" them."
+  },
+  {
+    "id": 261,
+    "category": "politics",
+    "headline": "Trump Reportedly Rejects Phone Security Measures As 'Too Inconvenient'",
+    "short_description": "The president is said to use a cellphone that lacks top security features and ignores advice to regularly swap his Twitter phone."
+  },
+  {
+    "id": 262,
+    "category": "politics",
+    "headline": "Federal Court Sides With Transgender Teen Gavin Grimm In Bathroom Fight",
+    "short_description": "The court denied a motion to dismiss Grimm's lawsuit against the Gloucester County School Board."
+  },
+  {
+    "id": 263,
+    "category": "politics",
+    "headline": "Ex-Trump Adviser Calls President's Claims That Informant Spied On Campaign 'Embarrassing'",
+    "short_description": "Trump has asked the Justice Department to look into whether an FBI informant infiltrated his campaign for political purposes."
+  },
+  {
+    "id": 264,
+    "category": "politics",
+    "headline": "Vietnam Is A Test For What Happens When The U.S. Abandons Climate Diplomacy",
+    "short_description": "The Asian country’s energy needs are growing and coal power is a tempting solution."
+  },
+  {
+    "id": 265,
+    "category": "politics",
+    "headline": "Just One-Third Of Americans Think Trump Is Successfully Draining The Swamp",
+    "short_description": "That percentage has barely budged since last year."
+  },
+  {
+    "id": 266,
+    "category": "politics",
+    "headline": "MSNBC Host Hugh Hewitt Suggests 'Trench Coat' Control, Not Gun Control",
+    "short_description": "Forget restricting guns as a way to curb school shootings. \"It's a Second Amendment right, not a Second Amendment suggestion.\""
+  },
+  {
+    "id": 267,
+    "category": "religion",
+    "headline": "Bishop Michael Curry: Harry And Meghan's Love Brought Different Worlds Together",
+    "short_description": "\"For a moment we were actually together, organized around love,” Curry said."
+  },
+  {
+    "id": 268,
+    "category": "queer voices",
+    "headline": "Sarah Paulson Is Unapologetic About 32-Year Age Gap With Girlfriend Holland Taylor",
+    "short_description": "And her justification is pretty romantic. 💕"
+  },
+  {
+    "id": 269,
+    "category": "politics",
+    "headline": "Texans On Both Sides Of Gun Debate Agree On Safe Storage, But Not On How To Support It",
+    "short_description": "The state has a child access prevention law, but it doesn't appear to be working as intended."
+  },
+  {
+    "id": 270,
+    "category": "queer voices",
+    "headline": "Family Of Gay Man Found Critically Injured Near Amtrak Route Wants Answers",
+    "short_description": "Aaron Salazar's family said authorities have been looking into the possibility of attempted suicide, but they don't believe he would take his own life."
+  },
+  {
+    "id": 271,
+    "category": "queer voices",
+    "headline": "Caitlyn Jenner: Trump Is The 'Worst President We Have Ever Had' On LGBTQ Rights",
+    "short_description": "She and Mike Pence had a \"great conversation,\" however."
+  },
+  {
+    "id": 272,
+    "category": "queer voices",
+    "headline": "Boy Scout Allegedly Booted From Store Because Company Won't 'Support Homos'",
+    "short_description": "“Your organization is not the Boy Scouts anymore,” the employee reportedly said."
+  },
+  {
+    "id": 273,
+    "category": "tech",
+    "headline": "Instagram Is Adding A 'Mute' Button For The Sake Of Your Sanity",
+    "short_description": "And no one will know when you use it."
+  },
+  {
+    "id": 274,
+    "category": "weird news",
+    "headline": "Publix Censors Teen's 'Summa Cum Laude' Graduation Cake",
+    "short_description": "\"I can’t believe I’m the first one to ever write ‘Summa Cum Laude’ on a cake.”"
+  },
+  {
+    "id": 275,
+    "category": "women",
+    "headline": "What Do You Say To Sexist Passengers? This Female Pilot Has The Perfect Response.",
+    "short_description": "\"Fact is, I can fly an £80m jet, you can’t.\""
+  },
+  {
+    "id": 276,
+    "category": "women",
+    "headline": "Time's Up Takes Aim At McDonald's, Walmart Over Sexual Harassment Complaints",
+    "short_description": "Low-wage workers are fighting back with the help of Hollywood donors."
+  },
+  {
+    "id": 277,
+    "category": "world news",
+    "headline": "Venezuela's Socialist Leader Nicolas Maduro Re-Elected Amid Allegations Of Irregularities",
+    "short_description": "The State Department has already announced that the U.S. will not recognize the election result."
+  },
+  {
+    "id": 278,
+    "category": "world news",
+    "headline": "Iran Says Europe's Support For Nuclear Deal Isn't Enough After America's Withdrawal",
+    "short_description": "“We have to preserve this agreement so we don’t have to negotiate a new agreement,” the EU's energy chief said."
+  },
+  {
+    "id": 279,
+    "category": "world news",
+    "headline": "Far-Right Mob Attacks 75-Year-Old Liberal Greek Mayor",
+    "short_description": "\"It was organized fascists who attacked me as a person and as a mayor,\" Yannis Boutaris said."
+  },
+  {
+    "id": 280,
+    "category": "entertainment",
+    "headline": "Shawn Mendes And Khalid Perform With Parkland Survivors At Billboard Music Awards",
+    "short_description": "This was not the first moment addressing gun violence at the awards show."
+  },
+  {
+    "id": 281,
+    "category": "black voices",
+    "headline": "Tamir Rice's Mother Is Opening A Youth Center To Honor Her Son's Memory",
+    "short_description": "The Tamir Rice Afrocentric Cultural Center will help usher children into the future her son will never have."
+  },
+  {
+    "id": 282,
+    "category": "politics",
+    "headline": "Judge Orders Texas To Make Voter Registration Easier When Updating DMV Info",
+    "short_description": "Plaintiffs complained that the state violated the 1993 National Voter Registration Act."
+  },
+  {
+    "id": 283,
+    "category": "entertainment",
+    "headline": "Kelly Clarkson Calls For 'Moments Of Action' In Honor Of Texas Shooting Victims At Billboard Awards",
+    "short_description": "\"Why don't we change what's happening?\""
+  },
+  {
+    "id": 284,
+    "category": "black voices",
+    "headline": "Kendrick Lamar Stops White Fan Rapping N-Word Onstage",
+    "short_description": "The Pulitzer Prize-winning artist gave her another shot."
+  },
+  {
+    "id": 285,
+    "category": "religion",
+    "headline": "Gay Man Says Pope Francis Told Him, ‘God Made You Like That And Loves You Like That'",
+    "short_description": "His words, reportedly uttered in private, have been described as the most progressive remarks ever made by a modern pontiff about homosexuality."
+  },
+  {
+    "id": 286,
+    "category": "science",
+    "headline": "Unusual Asteroid Could Be An Interstellar Guest To Our Solar System",
+    "short_description": "The supposed \"interstellar immigrant\" is located near Jupiter but has an atypical orbit."
+  },
+  {
+    "id": 287,
+    "category": "impact",
+    "headline": "She Started A Suicide Prevention Site At Age 15. It's Still Going Strong.",
+    "short_description": "“People didn’t view me seriously because I was a 15-year-old girl.”"
+  },
+  {
+    "id": 288,
+    "category": "politics",
+    "headline": "Roger Stone Says He's 'Prepared' For 'Conjured Up' Mueller Indictment",
+    "short_description": "Any action is an \"effort to silence me,\" the controversial political operative said."
+  },
+  {
+    "id": 289,
+    "category": "politics",
+    "headline": "Hillary Clinton To Endorse Andrew Cuomo's Re-Election",
+    "short_description": "The New York governor faces former \"Sex and the City\" star Cynthia Nixon in the Democratic primary."
+  },
+  {
+    "id": 290,
+    "category": "politics",
+    "headline": "The Supreme Court Just Made It A Lot Harder For You To Sue Your Employer",
+    "short_description": "A new ruling allows employers to force workers into class-action waivers. As one justice put it, the case cuts to \"the entire heart of the New Deal.\""
+  },
+  {
+    "id": 291,
+    "category": "politics",
+    "headline": "Blake Farenthold May Have Been Hired Illegally At His New Lobbyist Job",
+    "short_description": "A Texas newspaper filed a lawsuit alleging the Calhoun Port Authority hired the disgraced former lawmaker without public notice, in violation of state law."
+  },
+  {
+    "id": 292,
+    "category": "queer voices",
+    "headline": "Bill Konigsberg Explores A New Side Of The Gay Experience In His Latest Book",
+    "short_description": "The author hopes \"The Music of What Happens\" will inspire readers to fall in love ... and think twice about gender roles."
+  },
+  {
+    "id": 293,
+    "category": "queer voices",
+    "headline": "'Alone In The Game' Shows Biggest Hurdles For LGBTQ Athletes Exist Off The Field",
+    "short_description": "A new documentary examines the \"culture of exclusion, bigotry and discrimination\" in pro sports."
+  },
+  {
+    "id": 294,
+    "category": "entertainment",
+    "headline": "Chrissy Teigen Somehow Gets Even More Real About Life After Childbirth",
+    "short_description": "This is postpartum life unfiltered."
+  },
+  {
+    "id": 295,
+    "category": "entertainment",
+    "headline": "'Suits' Creator Pens Heartfelt Open Letter About Attending Royal Wedding",
+    "short_description": "\"It felt like the world was becoming a better place,\" Aaron Korsh wrote of the ceremony involving his friend, Meghan Markle."
+  },
+  {
+    "id": 296,
+    "category": "entertainment",
+    "headline": "Here Are The Movies Coming To Netflix This Week",
+    "short_description": "You have a few options this week, including a new Gillian Jacobs movie."
+  },
+  {
+    "id": 297,
+    "category": "entertainment",
+    "headline": "The Obamas Are Coming To Your Netflix Queue",
+    "short_description": "Netflix announced a deal with Barack and Michelle Obama to produce a variety of films and series."
+  },
+  {
+    "id": 298,
+    "category": "entertainment",
+    "headline": "Sorry, Ben Affleck, Make Way For Justin Theroux's Giant Rat Tattoo",
+    "short_description": "Ther-oh-my-God!"
+  },
+  {
+    "id": 299,
+    "category": "politics",
+    "headline": "Hillary Clinton Tips A Russian Hat At Trump During Yale Commencement Speech",
+    "short_description": "\"If you can't beat 'em, join 'em,\" Clinton said, in a pretty obvious nod to the Russians."
+  },
+  {
+    "id": 300,
+    "category": "politics",
+    "headline": "Giuliani Says Mueller Can't Talk To Trump Until Trump Hears More About FBI Source",
+    "short_description": "“We can’t let our guy go in and be questioned without knowing this,” the president's lawyer said."
+  },
+  {
+    "id": 301,
+    "category": "politics",
+    "headline": "Democrats Plan Big Anti-Corruption Theme For Midterms",
+    "short_description": "It's a revival of a successful tactic Dems used in 2006, when they took control of both chambers of Congress."
+  },
+  {
+    "id": 302,
+    "category": "entertainment",
+    "headline": "Kelly Clarkson Rejects 'Moment Of Silence,' Calls For Change At Billboard Music Awards",
+    "short_description": "The star veered from the traditional script, refusing to give the customary “moment of silence,” and tearfully calling for action instead."
+  },
+  {
+    "id": 303,
+    "category": "politics",
+    "headline": "We Asked The American Public To Settle 5 Of The Internet's Dumbest Debates",
+    "short_description": "Our poll showed some surprising generational divides."
+  },
+  {
+    "id": 304,
+    "category": "politics",
+    "headline": "Fox News Viewers Really Don’t Like Lifelong Republican Robert Mueller",
+    "short_description": "Most of those following the Trump-Russia investigation via the cable news outlet say they strongly disapprove of the special counsel's job performance."
+  },
+  {
+    "id": 305,
+    "category": "politics",
+    "headline": "Trump Team Moves To Lift Ban On 'Extreme' Hunting Tactics In Alaska",
+    "short_description": "The proposal would allow hunters to kill bear cubs and wolf pups in their dens and shoot swimming caribou from motorboats."
+  },
+  {
+    "id": 306,
+    "category": "politics",
+    "headline": "Howard Stern Tells How Trump Sexualized Ivanka And Makes David Letterman Cringe",
+    "short_description": "Trump told Stern: \"You know who’s a great beauty? My daughter Ivanka. Now she’s a 10.\""
+  },
+  {
+    "id": 307,
+    "category": "politics",
+    "headline": "The Supreme Court Is Helping Companies Get Away With Sexual Harassment",
+    "short_description": "The Me Too movement takes a massive hit from a new decision written by Justice Neil Gorsuch."
+  },
+  {
+    "id": 308,
+    "category": "entertainment",
+    "headline": "'Deadpool 2' Steals No. 1 Spot At The Box Office From 'Avengers: Infinity War'",
+    "short_description": "\"Deadpool 2\" was the third-biggest debut of the year behind Marvel blockbusters “Avengers: Infinity War” and “Black Panther.”"
+  },
+  {
+    "id": 309,
+    "category": "entertainment",
+    "headline": "Did 'Westworld' Subtly Tease That Baby Theory?",
+    "short_description": "Forget Shogun World. Did you catch that scene between Dolores and Teddy?"
+  },
+  {
+    "id": 310,
+    "category": "entertainment",
+    "headline": "Donald Glover Tells Ellen About His Full Circle 'Star Wars' Moment With His Son",
+    "short_description": "The experience was \"weird, but beautiful,\" Glover said."
+  },
+  {
+    "id": 311,
+    "category": "entertainment",
+    "headline": "A Marvel Exec Tried To Stop The Most Jarring 'Infinity War' Death",
+    "short_description": "In an interview with HuffPost, Nate Moore said he asked the Russo brothers to reconsider the death."
+  },
+  {
+    "id": 312,
+    "category": "entertainment",
+    "headline": "Jake Gyllenhaal Set To Star As Villain In 'Spider-Man' Sequel",
+    "short_description": "*Sends giftbasket to Marvel*"
+  },
+  {
+    "id": 313,
+    "category": "black voices",
+    "headline": "Janet Jackson Becomes First Black Woman To Receive Billboard Icon Award",
+    "short_description": "She delivered an iconic performance and speech, too."
+  },
+  {
+    "id": 314,
+    "category": "crime",
+    "headline": "'This Isn’t Pakistan, Bitch': Video Captures Driver’s Racist Rant",
+    "short_description": "A case of road rage in Texas quickly escalated into a hateful and xenophobic diatribe."
+  }
+]

@@ -7,20 +7,21 @@ const pollPostSchema = new mongoose.Schema(
     duration: { type: Number, default: 86400000 },
     isActive: { type: Boolean, default: true },
     location: { type: String, required: true },
-    pollQuestionId: {
-      type: mongoose.Schema.Types.ObjectId,
-      ref: "pollquestions",
-      index: true,
-    },
-    pollOptionId: {
-      type: mongoose.Schema.Types.ObjectId,
-      ref: "polloptions",
-      index: true,
-    },
+    // pollQuestionId: {
+    //   type: mongoose.Schema.Types.ObjectId,
+    //   ref: "pollquestions",
+    //   index: true,
+    // },
+    // pollOptionId: {
+    //   type: mongoose.Schema.Types.ObjectId,
+    //   ref: "polloptions",
+    //   index: true,
+    // },
     views: { type: Number, default: 0 },
     likes: { type: Number, default: 0 },
     dislikes: { type: Number, default: 0 },
     comments: { type: Number, default: 0 },
+    totalNumberOfVotes: { type: Number, default: 0 },
     votes: [{ type: mongoose.Schema.Types.ObjectId, ref: "pollvotes" }],
     createdBy: {
       type: mongoose.Schema.Types.ObjectId,
@@ -60,6 +61,9 @@ const pollOptionSchema = new mongoose.Schema(
       index: true,
     },
     option: { type: String, required: true },
+    percentage: {
+      type: Number,
+    },
   },
   {
     timestamps: true,
@@ -185,63 +189,6 @@ class PollPostModel {
         console.log("result", result);
         callback(null, result);
       });
-
-      // const pollOptions = await obj.options.option.map(async (element) => {
-      //   option.pollQuestionID = await pollQuestion[0]._id;
-      //   option.option = await element;
-      //   // console.log(option);
-      //   let x = await optionModel.create([option], options, (error, data) => {
-      //     if (error) {
-      //       callback(error);
-      //     } else {
-      //       console.log("inside ", data[0]._id);
-      //       return data;
-      //     }
-      //   });
-      //   console.log(x);
-      // });
-      // console.log(pollOptions);
-
-      // await pollOptions.map(async (option) => {
-      //   console.log('in',option);
-      //   await option.then(async (data) => {
-      //     console.log(data);
-      //   })
-      // })
-
-      // let createdOptions = Promise.all(pollOptions).then(async (result) => {
-      //   // await session.commitTransaction();
-      //   // session.endSession();
-      //   console.log("result", result);
-      //   // let optionIds = await result.map(async (element) => {
-      //   //   return await element.map(async (option) => {
-      //   //     return await option._id;
-      //   //   })
-      //   // })
-      //   // // return optionIds;
-      //   // console.log("options", optionIds);
-      //   // callback(null, pollOptions);
-      // });
-
-      /*below*/
-      // const pollOptions = await optionModel.create([obj.options], options);
-
-      // const updatepost = await postModel.findByIdAndUpdate(
-      //   { _id: post[0]._id },
-      //   {
-      //     pollQuestionId: pollQuestion[0]._id,
-      //     pollOptionId: pollOptions[0]._id,
-      //   },
-      //   {
-      //     new: true,
-      //     session: session,
-      //   }
-      // );
-
-      // console.log(updatepost);
-      // await session.commitTransaction();
-      // session.endSession();
-      // callback(null, pollOptions);
     } catch (error) {
       await session.abortTransaction();
       session.endSession();
@@ -249,57 +196,49 @@ class PollPostModel {
     }
   };
 
-  read = async (callback) => {
+  read = async (obj, callback) => {
+    // let all = await postModel.aggregate([
+    //   {
+    //     $lookup: {
+    //       from: "pollvotes",
+    //       localField: "votes",
+    //       foreignField: "_id",
+    //       as: "productObjects",
+    //     },
+    //   },
+    // ]);
+    // console.log(all);
+
     // Retrieve Posts
     let posts = await postModel
       .find()
-      .populate("createdBy")
-      // .populate({
-      //   path: "votes",
-      //   // model: 'pollVotes',
-      //   populate: { path: "votes", model: 'pollVotes'},
-      // })
+      .populate("createdBy", "firstName lastName email profileUrl")
       .sort({ createdAt: -1 });
+
     let postIds = posts.map((post) => {
       return post._id;
     });
 
-    let pollVotes = await voteModel.find({ pollId: { $in: postIds } });
-
-    // console.log(pollVotes);
+    // let pollVotes = await voteModel.find({ pollId: { $in: postIds } });
+    let pollVotes = await voteModel
+      .find({ createdBy: obj.userId })
+      .select("pollId vote");
 
     // Retrieve Post questions
-    let postQuestions = await questionModel.find({ pollId: { $in: postIds } });
+    let postQuestions = await questionModel
+      .find({ pollId: { $in: postIds } })
+      .select("pollId question");
     let questionIds = postQuestions.map((question) => {
       return question._id;
     });
 
     // Retrieve question options
-    let options = await optionModel.find({
-      pollQuestionID: { $in: questionIds },
-    });
+    let options = await optionModel
+      .find({
+        pollQuestionID: { $in: questionIds },
+      })
+      .select("pollQuestionID option percentage");
 
-    /**Working */
-    // let temp = posts.map((post) => {
-    //   console.log({ ...post });
-    //   return {
-    //     ...post._doc,
-    //     question: postQuestions.map((question) => {
-    //       return (
-    //         post._id.toString() === question.pollId._id.toString() && {
-    //           ...question._doc,
-    //           options: options.filter(
-    //             (option) =>
-    //               question._id.toString() ===
-    //               option.pollQuestionID._id.toString()
-    //           ),
-    //         }
-    //       );
-    //     }),
-    //   };
-    // });
-
-    /**Working */
     // Merge question with thier options
     let questionWithOptions = await postQuestions.map((question) => {
       //   console.log({ ...question });
@@ -332,64 +271,11 @@ class PollPostModel {
       };
     });
 
-    // let vote = await options.map(async (element) => {
-    //   let totalAnswered = await answerModel
-    //     .find({
-    //       pollOptionId: element._id,
-    //     })
-    //     // .session(session)
-    //     .populate("pollOptionId")
-    //     .populate("userId");
-    //   return {
-    //     option: element,
-    //     numberOfVotes: totalAnswered.length,
-    //   };
-    // });
-    // Promise.all(vote).then(async (result) => {
-
-    //   let totalNumberOfVotes = result
-    //     .map((vote) => vote.numberOfVotes)
-    //     .reduce((acc, cur) => acc + cur);
-    //   let perOptionPercentage = newAll.map((post) => {
-    //     return post.question.options.map((option) => {
-    //       console.log(option);
-    //       return {
-    //         ...option._doc,
-    //         percentage: result.map((ele) =>
-    //           ele.option._id === option._id && totalNumberOfVotes > 0
-    //             ? (ele.numberOfVotes / totalNumberOfVotes) * 100
-    //             : 0
-    //         ),
-    //       };
-    //     });
-    //   });
-    //   callback(null, perOptionPercentage);
-    // });
-
-    /**Practice */
-    // questionModel.aggregate(
-    //   [
-    //     {
-    //       $lookup: {
-    //         from: "pollposts",
-    //         localField: "pollId",
-    //         foreignField: "_id",
-    //         as: "posts",
-    //       }
-    //     },
-    //     { $unwind: { path: "$posts" } },
-    //   ],
-    //   (err, data) => {
-    //     if (err) {
-    //       console.log(err);
-    //     } else {
-    //       console.log(data);
-    //     }
-    //   }
-    // );
-    /**Practice */
-
     callback(null, newAll);
+  };
+
+  getTotalNumberOfVotes = async (obj) => {
+    return await answerModel.find(obj).count();
   };
 
   update = async (obj, callback) => {
@@ -397,7 +283,11 @@ class PollPostModel {
     session.startTransaction();
 
     const postResult = await postModel.findById(obj.pollId);
-    let count = postResult.likes + postResult.dislikes + postResult.comments;
+    let count =
+      postResult.likes +
+      postResult.dislikes +
+      postResult.comments +
+      postResult.totalNumberOfVotes;
     if (count === 0) {
       try {
         const postResult = await postModel
@@ -530,35 +420,78 @@ class PollPostModel {
     );
   };
 
-  pollAnswer = (obj, callback) => {
-    answerModel.findOne(
-      {
-        $and: [
-          { userId: obj.userId },
-          { pollId: obj.pollId },
-          { pollQuestionId: obj.pollQuestionId },
-        ],
-      },
-      (error, data) => {
-        if (error) {
-          callback(error);
-        } else {
-          if (data === null) {
-            answerModel.create(obj, (error, data) => {
-              if (error) {
-                callback(error);
-              } else {
-                callback(null, data);
-              }
-            });
-          } else {
-            console.log(data);
-            console.log("already answered !");
-            callback(null, data);
-          }
-        }
+  pollAnswer = async (obj, callback) => {
+    const session = await postModel.startSession();
+    session.startTransaction();
+    try {
+      const options = { session };
+      let findPost = await answerModel
+        .findOne({
+          $and: [
+            { userId: obj.userId },
+            { pollId: obj.pollId },
+            { pollQuestionId: obj.pollQuestionId },
+          ],
+        })
+        .session(session);
+      if (findPost === null) {
+        await answerModel.create([obj], options);
+        let incrementVote = await postModel
+          .findByIdAndUpdate(
+            obj.pollId,
+            {
+              $inc: { totalNumberOfVotes: 1 },
+            },
+            { new: true }
+          )
+          .session(session);
+        let pollOptions = await optionModel
+          .find({ pollQuestionID: obj.pollQuestionId })
+          .select("_id")
+          .session(session);
+        let vote = await pollOptions.map(async (element) => {
+          let totalAnswered = await answerModel
+            .find({
+              pollOptionId: element._id,
+            })
+            .session(session)
+            .count();
+
+          return await optionModel
+            .findByIdAndUpdate(
+              element._id,
+              {
+                percentage:
+                  (totalAnswered / incrementVote.totalNumberOfVotes) * 100,
+              },
+              { new: true }
+            )
+            .session(session);
+        });
+        Promise.all(vote)
+          .then(async (result) => {
+            console.log(vote);
+            await session.commitTransaction();
+            session.endSession();
+            callback(null, result);
+          })
+          .catch(async (error) => {
+            await session.abortTransaction();
+            session.endSession();
+            callback(error);
+          });
+      } else {
+        await session.abortTransaction();
+        session.endSession();
+        console.log(data);
+        console.log("already answered !");
+        callback(null, data);
       }
-    );
+    } catch (error) {
+      await session.abortTransaction();
+      session.endSession();
+      callback(error);
+    }
   };
 
   readAnswers = (obj, callback) => {
@@ -614,15 +547,12 @@ class PollPostModel {
       const options = { session };
       let question = await questionModel
         .findOne({ pollId: obj.pollId })
+        .populate("pollId")
         .session(session);
       let questionOptions = await optionModel
         .find({ pollQuestionID: question._id })
+        .select("pollQuestionID option percentage")
         .session(session);
-      // let data = await questionOptions.map((question) =>
-      //   question._id.toString()
-      // );
-
-      /**Need to modify or compresssed */
       let totalAnswered = await answerModel
         .find({
           pollOptionId: { $in: questionOptions },
@@ -636,47 +566,14 @@ class PollPostModel {
       let numberOfGuests = totalAnswered.filter(
         (element) => element.userId.role === "guest"
       ).length;
-      /**Need to modify or compresssed */
-      let vote = await questionOptions.map(async (element) => {
-        let totalAnswered = await answerModel
-          .find({
-            pollOptionId: element._id,
-          })
-          .session(session)
-          .populate("pollOptionId")
-          .populate("userId");
-        return {
-          option: element,
-          numberOfVotes: totalAnswered.length,
-        };
-      });
-      Promise.all(vote).then(async (result) => {
-        let totalNumberOfVotes = result
-          .map((vote) => vote.numberOfVotes)
-          .reduce((acc, cur) => acc + cur);
-        let perOptionPercentage = result.map((vote) => {
-          return {
-            ...vote,
-            percentage:
-              totalNumberOfVotes > 0
-                ? (vote.numberOfVotes / totalNumberOfVotes) * 100
-                : 0,
-            // totalVote: totalNumberOfVotes,
-          };
-        });
-        // console.log([
-        //   { totalVotes: totalNumberOfVotes },
-        //   ...perOptionPercentage,
-        // ]);
 
-        await session.commitTransaction();
-        session.endSession();
-        callback(null, {
-          totalVotes: totalNumberOfVotes,
-          totalNumberOfUsersVoted: numberOfUsers,
-          totalNumberOfGuestssVoted: numberOfGuests,
-          data: perOptionPercentage,
-        });
+      await session.commitTransaction();
+      session.endSession();
+      callback(null, {
+        totalVotes: question.pollId.totalNumberOfVotes,
+        totalNumberOfUsersVoted: numberOfUsers,
+        totalNumberOfGuestssVoted: numberOfGuests,
+        data: questionOptions,
       });
     } catch (error) {
       await session.abortTransaction();
