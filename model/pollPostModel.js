@@ -1,4 +1,5 @@
 const mongoose = require("mongoose");
+const { followModel } = require("./followModel.js");
 
 const pollPostSchema = new mongoose.Schema(
   {
@@ -209,9 +210,17 @@ class PollPostModel {
     // ]);
     // console.log(all);
 
+    // let list = await followModel.find({ follower: obj.userId }).select('following');
+    // console.log(list);
+
+    let query =
+      (obj.key === "ALL" && {}) ||
+      (obj.key === "SELF" && { createdBy: obj.userId });
+    console.log(query);
+
     // Retrieve Posts
     let posts = await postModel
-      .find()
+      .find(query)
       .populate("createdBy", "firstName lastName email profileUrl")
       .sort({ createdAt: -1 });
 
@@ -272,10 +281,6 @@ class PollPostModel {
     });
 
     callback(null, newAll);
-  };
-
-  getTotalNumberOfVotes = async (obj) => {
-    return await answerModel.find(obj).count();
   };
 
   update = async (obj, callback) => {

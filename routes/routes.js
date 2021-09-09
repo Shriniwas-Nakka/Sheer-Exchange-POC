@@ -70,6 +70,33 @@ route.get(
  * */
 route.post("/user/signUp", userController.signUpUserController);
 route.post("/user/signIn", userController.signInUserController);
+route.get("/users", userController.getUsersBySearchController);
+route.get(
+  "/:userId/profile",
+  authentication.authenticateUser,
+  userController.getUserProfileController
+);
+
+/**
+ * User Follower Model
+ * */
+/** Note:
+ * action : [follow, unfollow]
+ * userId : [following user id]
+ */
+route.post(
+  "/:action/:userId",
+  authentication.authenticateUser,
+  userController.followUserController
+);
+/** Note:
+ * filter : [followers, following]
+ */
+route.get(
+  "/:userId/:filter/list",
+  authentication.authenticateUser,
+  userController.listFollowerAndFollowingController
+);
 
 /**
  * Hashtag

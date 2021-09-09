@@ -41,6 +41,7 @@ class PollPostController {
   readPollPostsController = (req, res, next) => {
     let data = {
       userId: req.token._id,
+      key: req.query.key,
     };
     pollPostModel.read(data, (error, data) => {
       if (error) {
