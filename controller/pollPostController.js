@@ -42,7 +42,9 @@ class PollPostController {
     let data = {
       userId: req.token._id,
       key: req.query.key,
+      value: req.query.key === "COUNTRY" && req.query.value,
     };
+    console.log(data);
     pollPostModel.read(data, (error, data) => {
       if (error) {
         response.status = false;

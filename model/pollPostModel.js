@@ -1,5 +1,7 @@
 const mongoose = require("mongoose");
 const { followModel } = require("./followModel.js");
+const trendCalculator = require("../middleware/trendPosts/trendData");
+const normalizedPosts = require("../middleware/trendPosts/normalizeValues");
 
 const pollPostSchema = new mongoose.Schema(
   {
@@ -198,31 +200,89 @@ class PollPostModel {
   };
 
   read = async (obj, callback) => {
-    // let all = await postModel.aggregate([
-    //   {
-    //     $lookup: {
-    //       from: "pollvotes",
-    //       localField: "votes",
-    //       foreignField: "_id",
-    //       as: "productObjects",
-    //     },
-    //   },
-    // ]);
-    // console.log(all);
-
-    // let list = await followModel.find({ follower: obj.userId }).select('following');
-    // console.log(list);
+    // let query =
+    //   (obj.key === "ALL" && {
+    //     $and: [
+    //       {
+    //         createdBy: {
+    //           $in: (
+    //             await followModel
+    //               .find({ follower: obj.userId })
+    //               .select("following")
+    //           ).map((id) => new mongoose.Types.ObjectId(id.following)),
+    //         },
+    //       },
+    //       { location: "america" },
+    //     ],
+    //   }) ||
+    //   (obj.key === "SELF" && {
+    //     createdBy: new mongoose.Types.ObjectId(obj.userId),
+    //   });
 
     let query =
-      (obj.key === "ALL" && {}) ||
-      (obj.key === "SELF" && { createdBy: obj.userId });
-    console.log(query);
+      (obj.key === "ALL" && {
+        $or: [
+          {
+            createdBy: {
+              $in: (
+                await followModel
+                  .find({ follower: obj.userId })
+                  .select("following")
+              ).map((id) => new mongoose.Types.ObjectId(id.following)),
+            },
+          },
+          { createdBy: new mongoose.Types.ObjectId(obj.userId) },
+        ],
+      }) ||
+      (obj.key === "SELF" && {
+        createdBy: new mongoose.Types.ObjectId(obj.userId),
+      }) ||
+      (obj.key === "COUNTRY" && {
+        location: obj.value,
+      });
 
-    // Retrieve Posts
-    let posts = await postModel
-      .find(query)
-      .populate("createdBy", "firstName lastName email profileUrl")
-      .sort({ createdAt: -1 });
+    /**Logic to get user followed posts */
+
+    // let list = await followModel
+    //   .find({ follower: obj.userId })
+    //   .select("following");
+
+    let posts = await postModel.aggregate([
+      {
+        $match: query,
+      },
+      {
+        $lookup: {
+          from: "users",
+          localField: "createdBy",
+          foreignField: "_id",
+          as: "user",
+        },
+      },
+      { $unwind: "$user" },
+      {
+        $project: {
+          "user.password": 0,
+          "user.createdAt": 0,
+          "user.updatedAt": 0,
+          "user.__v": 0,
+        },
+      },
+      { $sort: { createdAt: -1 } },
+    ]);
+
+    /**Logic to get user followed posts */
+
+    // let query =
+    //   (obj.key === "ALL" && {}) ||
+    //   (obj.key === "SELF" && { createdBy: obj.userId });
+    // console.log(query);
+
+    // // Retrieve Posts
+    // let posts = await postModel
+    //   .find(query)
+    //   .populate("createdBy", "firstName lastName email profileUrl")
+    //   .sort({ createdAt: -1 });
 
     let postIds = posts.map((post) => {
       return post._id;
@@ -264,7 +324,8 @@ class PollPostModel {
     let allposts = await posts.map((post) => {
       // console.log({ ...post });
       return {
-        ...post._doc,
+        // ...post._doc,
+        ...post,
         question: questionWithOptions.filter(
           (question) => post._id.toString() === question.pollId.toString()
         )[0],
@@ -279,7 +340,6 @@ class PollPostModel {
         ),
       };
     });
-
     callback(null, newAll);
   };
 
@@ -399,7 +459,17 @@ class PollPostModel {
             .session(session);
           await callback(null, "You have successfully voted !");
         } else {
-          await callback(null, "You have already voted !");
+          let decrement = (await obj.vote)
+            ? { $inc: { likes: -1 } }
+            : { $inc: { dislikes: -1 } };
+
+          await voteModel
+            .findOneAndRemove({ pollId: obj.pollId })
+            .session(session);
+          await postModel
+            .findByIdAndUpdate(obj.pollId, decrement)
+            .session(session);
+          await callback(null, "You have removed your vote !");
         }
       }
       await session.commitTransaction();
@@ -585,6 +655,33 @@ class PollPostModel {
       session.endSession();
       callback(error);
     }
+  };
+
+  trendingPosts = async (obj, callback) => {
+    let data = await postModel.find().sort("-createdAt");
+    let { trendingPosts, valuesPerTenMin } = await trendCalculator(data);
+    // console.log(trendingPosts);
+    let newData = await normalizedPosts(trendingPosts, valuesPerTenMin);
+    newData.forEach(async (ele) => {
+      ele.trendingValue =
+        (ele.normalizedLikes +
+          ele.normalizedViews +
+          ele.normalizedComments +
+          ele.normalizedVotes) *
+        100;
+      delete ele.normalizedLikes;
+      delete ele.normalizedViews;
+      delete ele.normalizedComments;
+      delete ele.normalizedVotes;
+      delete ele.avgLikes;
+      delete ele.avgViews;
+      delete ele.avgComments;
+      delete ele.avgVotes;
+    });
+    callback(
+      null,
+      newData.sort((a, b) => b.trendingValue - a.trendingValue)
+    );
   };
 }
 

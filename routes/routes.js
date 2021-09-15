@@ -3,6 +3,7 @@ const pollPostController = require("../controller/pollPostController");
 const userController = require("../controller/userController");
 const authentication = require("../middleware/middleware");
 const hashtagController = require("../controller/hashtagController");
+const tagController = require("../controller/tagController");
 
 route.post(
   "/pollpost",
@@ -103,5 +104,29 @@ route.get(
  * */
 route.post("/hashtag", hashtagController.createHashTag);
 route.get("/category", hashtagController.getHashTagCategory);
+
+/**
+ * Tag
+ */
+route.post(
+  "/tag",
+  authentication.authenticateUser,
+  tagController.createTagController
+);
+route.get(
+  "/tags",
+  authentication.authenticateUser,
+  tagController.readTagsController
+);
+
+/**
+ * Trending posts
+ */
+
+route.get(
+  "/trendingPosts",
+  authentication.authenticateUser,
+  tagController.trendingPostsController
+);
 
 module.exports = route;
