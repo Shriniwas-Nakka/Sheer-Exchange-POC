@@ -11,6 +11,9 @@ class PollPostController {
           description: req.body.description ?? null,
           duration: req.body.duration ?? 86400000,
           location: req.body.location,
+          taggedUsers:
+            req.body.taggedUsers.length > 0 ? req.body.taggedUsers : [],
+          tags: req.body.tags.length > 0 ? req.body.tags : [],
           createdBy: req.token._id,
           modifiedBy: req.token._id,
         },
@@ -44,7 +47,7 @@ class PollPostController {
       key: req.query.key,
       value: req.query.key === "COUNTRY" && req.query.value,
     };
-    console.log(data);
+    // console.log(data);
     pollPostModel.read(data, (error, data) => {
       if (error) {
         response.status = false;
@@ -174,7 +177,7 @@ class PollPostController {
   };
 
   viewPollPostController = (req, res, next) => {
-    console.log(req.body);
+    // console.log(req.body);
     let data = {
       userId: req.token._id,
       pollId: req.body.pollId,
@@ -224,7 +227,7 @@ class PollPostController {
       // pollQuestionId: req.body.pollQuestionId,
       // pollOptionId: req.body.pollOptionId,
     };
-    console.log(data);
+    // console.log(data);
     pollPostModel.readAnswers(data, (error, data) => {
       if (error) {
         response.status = false;

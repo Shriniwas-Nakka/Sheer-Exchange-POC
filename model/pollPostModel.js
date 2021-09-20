@@ -1,7 +1,15 @@
 const mongoose = require("mongoose");
 const { followModel } = require("./followModel.js");
+const { taggedUserModel } = require("./taggedUser");
+const { tagModel } = require("./tagsModel");
+const { savePostModel } = require("./savePostModel");
+const {
+  createNotification,
+  deleteNotification,
+} = require("./notificationModel");
 const trendCalculator = require("../middleware/trendPosts/trendData");
 const normalizedPosts = require("../middleware/trendPosts/normalizeValues");
+const { post } = require("../routes/routes.js");
 
 const pollPostSchema = new mongoose.Schema(
   {
@@ -25,7 +33,9 @@ const pollPostSchema = new mongoose.Schema(
     dislikes: { type: Number, default: 0 },
     comments: { type: Number, default: 0 },
     totalNumberOfVotes: { type: Number, default: 0 },
-    votes: [{ type: mongoose.Schema.Types.ObjectId, ref: "pollvotes" }],
+    votes: [{ type: mongoose.Schema.Types.ObjectId, ref: "pollvotes" }], // need to think on this
+    taggedUsers: [{ type: mongoose.Schema.Types.ObjectId, ref: "users" }],
+    tags: [{ type: mongoose.Schema.Types.ObjectId, ref: "tags" }],
     createdBy: {
       type: mongoose.Schema.Types.ObjectId,
       ref: "users",
@@ -163,6 +173,93 @@ const answerModel = mongoose.model("pollanswers", pollAnswerSchema);
 const voteModel = mongoose.model("pollvotes", pollVoteSchema);
 const commentModel = mongoose.model("pollcomments", pollCommentSchema);
 
+// postModel.watch().on("change", (change) => {
+//   console.log("watch--->", change);
+// });
+
+answerModel.watch().on("change", async (change) => {
+  console.log("----> change in answer model", change);
+  if (change.operationType === "insert") {
+    let post = await postModel.findOne({ _id: change.fullDocument.pollId });
+    let data = {
+      pollId: change.fullDocument.pollId,
+      to: post.createdBy,
+      from: change.fullDocument.userId,
+      notificationType: "VOTE",
+      createdBy: change.fullDocument.userId,
+      modifiedBy: change.fullDocument.userId,
+    };
+    data.to.toString() !== data.from.toString() &&
+      createNotification(data, (error, data) => {
+        if (error) {
+          throw new Error(error);
+        } else {
+          console.log("notification created !", data);
+        }
+      });
+  }
+});
+
+voteModel.watch().on("change", async (change) => {
+  // console.log("vote --->", change);
+  if (change.operationType === "insert") {
+    if (change.fullDocument.vote) {
+      let post = await postModel.findOne({ _id: change.fullDocument.pollId });
+      let data = {
+        pollId: change.fullDocument.pollId,
+        to: post.createdBy,
+        from: change.fullDocument.createdBy,
+        notificationType: "LIKE",
+        createdBy: change.fullDocument.createdBy,
+        modifiedBy: change.fullDocument.createdBy,
+      };
+      console.log(data);
+      console.log(data.to.toString() !== data.from.toString());
+      data.to.toString() !== data.from.toString() &&
+        createNotification(data, (error, data) => {
+          if (error) {
+            throw new Error(error);
+          } else {
+            console.log("notification created !", data);
+          }
+        });
+    }
+  }
+  // if (change.operationType === "delete") {
+  //   console.log(change);
+  //   deleteNotification({ id: change.documentKey._id }, (error, data) => {
+  //     if (error) {
+  //       throw new Error(error);
+  //     } else {
+  //       console.log("notification deleted !", data);
+  //     }
+  //   });
+  // }
+});
+
+commentModel.watch().on("change", async (change) => {
+  if (change.operationType === "insert") {
+    let post = await postModel.findOne({ _id: change.fullDocument.pollId });
+    let data = {
+      pollId: change.fullDocument.pollId,
+      to: post.createdBy,
+      from: change.fullDocument.createdBy,
+      notificationType: "COMMENT",
+      createdBy: change.fullDocument.createdBy,
+      modifiedBy: change.fullDocument.createdBy,
+    };
+    console.log(data);
+    data.to.toString() !== data.from.toString() &&
+      createNotification(data, (error, data) => {
+        if (error) {
+          throw new Error(error);
+        } else {
+          console.log("notification created !", data);
+        }
+      });
+  }
+});
+
 class PollPostModel {
   create = async (obj, callback) => {
     const session = await postModel.startSession();
@@ -170,26 +267,43 @@ class PollPostModel {
     try {
       const options = { session };
       const post = await postModel.create([obj.post], options);
+      let pollId = post[0]._id;
+      // console.log(pollId);
+
+      (await obj.post.taggedUsers.length) > 0 &&
+        (await obj.post.taggedUsers.map(async (user) => {
+          let data = {
+            pollId: pollId,
+            userId: obj.post.createdBy,
+            taggedUserId: user,
+            createdBy: obj.post.createdBy,
+            modifiedBy: obj.post.createdBy,
+          };
+          await taggedUserModel.create([data], options);
+        }));
+
+      (await obj.post.tags.length) > 0 &&
+        obj.post.tags.map(async (tag) => {
+          await tagModel
+            .findByIdAndUpdate(tag, { $inc: { mentions: 1 } })
+            .session(session);
+        });
 
       obj.question.pollId = await post[0]._id;
       const pollQuestion = await questionModel.create([obj.question], options);
 
       obj.options.pollQuestionID = await pollQuestion[0]._id;
 
-      //   console.log(obj.options);
       let option = {};
       const pollOptions = await obj.options.option.map(async (element) => {
         option.pollQuestionID = await pollQuestion[0]._id;
         option.option = await element;
-        // console.log(option);
         return await optionModel.create([option], options);
       });
-      console.log(pollOptions);
 
       Promise.all(pollOptions).then(async (result) => {
         await session.commitTransaction();
         session.endSession();
-        console.log("result", result);
         callback(null, result);
       });
     } catch (error) {
@@ -200,24 +314,78 @@ class PollPostModel {
   };
 
   read = async (obj, callback) => {
-    // let query =
-    //   (obj.key === "ALL" && {
-    //     $and: [
-    //       {
-    //         createdBy: {
-    //           $in: (
-    //             await followModel
-    //               .find({ follower: obj.userId })
-    //               .select("following")
-    //           ).map((id) => new mongoose.Types.ObjectId(id.following)),
-    //         },
-    //       },
-    //       { location: "america" },
-    //     ],
-    //   }) ||
-    //   (obj.key === "SELF" && {
-    //     createdBy: new mongoose.Types.ObjectId(obj.userId),
-    //   });
+    let taggedPosts =
+      obj.key === "TAGGED" &&
+      (await taggedUserModel.aggregate([
+        {
+          $match: { taggedUserId: new mongoose.Types.ObjectId(obj.userId) },
+        },
+        {
+          $lookup: {
+            from: "pollposts",
+            localField: "pollId",
+            foreignField: "_id",
+            as: "posts",
+          },
+        },
+        { $unwind: "$posts" },
+        {
+          $lookup: {
+            from: "users",
+            localField: "posts.taggedUsers",
+            foreignField: "_id",
+            as: "posts.tagUsers",
+          },
+        },
+        {
+          $lookup: {
+            from: "tags",
+            localField: "posts.tags",
+            foreignField: "_id",
+            as: "posts.selectedTags",
+          },
+        },
+        {
+          $lookup: {
+            from: "users",
+            localField: "posts.createdBy",
+            foreignField: "_id",
+            as: "posts.user",
+          },
+        },
+        { $unwind: "$posts.user" },
+        {
+          $lookup: {
+            from: "pollvotes",
+            // localField: "votes",
+            // foreignField: "_id",
+            let: { id: "$id" },
+            pipeline: [
+              {
+                $match: { createdBy: new mongoose.Types.ObjectId(obj.userId) },
+              },
+            ],
+            as: "posts.polllikes",
+          },
+        },
+        {
+          $project: {
+            "posts.taggedUsers": 0,
+            "posts.tags": 0,
+            "user.password": 0,
+            "user.createdAt": 0,
+            "user.updatedAt": 0,
+            "user.__v": 0,
+            createdAt: 0,
+            updatedAt: 0,
+            __v: 0,
+          },
+        },
+        { $sort: { createdAt: -1 } },
+        // { $addFields: "$posts" },
+      ]));
+    let newTaggedPosts =
+      obj.key === "TAGGED" && taggedPosts.map((post) => post.posts);
 
     let query =
       (obj.key === "ALL" && {
@@ -231,6 +399,16 @@ class PollPostModel {
               ).map((id) => new mongoose.Types.ObjectId(id.following)),
             },
           },
+          // fetch tagged user post as well
+          // {
+          //   createdBy: {
+          //     $in: (await taggedUserModel.find({ taggedUserId: obj.userId }))
+          //       .map((id) => {
+          //         console.log(id.userId);
+          //         return new mongoose.Types.ObjectId(id.userId);
+          //       }),
+          //   },
+          // },
           { createdBy: new mongoose.Types.ObjectId(obj.userId) },
         ],
       }) ||
@@ -241,35 +419,86 @@ class PollPostModel {
         location: obj.value,
       });
 
-    /**Logic to get user followed posts */
-
-    // let list = await followModel
-    //   .find({ follower: obj.userId })
-    //   .select("following");
-
-    let posts = await postModel.aggregate([
-      {
-        $match: query,
-      },
-      {
-        $lookup: {
-          from: "users",
-          localField: "createdBy",
-          foreignField: "_id",
-          as: "user",
+    let posts =
+      obj.key !== "TAGGED" &&
+      (await postModel.aggregate([
+        {
+          $match: query,
         },
-      },
-      { $unwind: "$user" },
-      {
-        $project: {
-          "user.password": 0,
-          "user.createdAt": 0,
-          "user.updatedAt": 0,
-          "user.__v": 0,
+        {
+          $lookup: {
+            from: "users",
+            localField: "createdBy",
+            foreignField: "_id",
+            as: "user",
+          },
         },
-      },
-      { $sort: { createdAt: -1 } },
-    ]);
+        { $unwind: "$user" },
+        {
+          $lookup: {
+            from: "users",
+            localField: "taggedUsers",
+            foreignField: "_id",
+            as: "tagUsers",
+          },
+        },
+        {
+          $lookup: {
+            from: "tags",
+            localField: "tags",
+            foreignField: "_id",
+            as: "selectedTags",
+          },
+        },
+        {
+          $lookup: {
+            from: "pollvotes",
+            // localField: "votes",
+            // foreignField: "_id",
+            let: { id: "$id" },
+            pipeline: [
+              {
+                $match: { createdBy: new mongoose.Types.ObjectId(obj.userId) },
+              },
+            ],
+            as: "polllikes",
+          },
+        },
+        // { $unwind: "$polllikes" },
+        {
+          $project: {
+            taggedUsers: 0,
+            tags: 0,
+            "user.password": 0,
+            "user.createdAt": 0,
+            "user.updatedAt": 0,
+            "user.__v": 0,
+          },
+        },
+        { $sort: { createdAt: -1 } },
+      ]));
+
+    /**
+     * Saved poll post
+     */
+    // let savedPosts = await savePostModel.find({ userId: obj.userId });
+    // // console.log("saved", savedPosts);
+
+    // savedPosts =
+    //   obj.key !== "TAGGED" &&
+    //   (await posts.map(async (post) => {
+    //     return {
+    //       ...post,
+    //       saved: await savedPosts.some(
+    //         (savedPost) =>
+    //           savedPost.pollId.toString() === post._id.toString() &&
+    //           obj.userId.toString() === savedPost.userId.toString()
+    //       ),
+    //     };
+    //   }));
+    // console.log(savedPosts);
+
+    // console.log("---->", posts);
 
     /**Logic to get user followed posts */
 
@@ -284,14 +513,19 @@ class PollPostModel {
     //   .populate("createdBy", "firstName lastName email profileUrl")
     //   .sort({ createdAt: -1 });
 
-    let postIds = posts.map((post) => {
-      return post._id;
-    });
+    let postIds =
+      obj.key === "TAGGED"
+        ? newTaggedPosts.map((post) => {
+            return post._id;
+          })
+        : posts.map((post) => {
+            return post._id;
+          });
 
     // let pollVotes = await voteModel.find({ pollId: { $in: postIds } });
-    let pollVotes = await voteModel
-      .find({ createdBy: obj.userId })
-      .select("pollId vote");
+    // let pollVotes = await voteModel
+    //   .find({ createdBy: obj.userId })
+    //   .select("pollId vote");
 
     // Retrieve Post questions
     let postQuestions = await questionModel
@@ -321,26 +555,36 @@ class PollPostModel {
     });
 
     // Merge poll posts with thier questions
-    let allposts = await posts.map((post) => {
-      // console.log({ ...post });
-      return {
-        // ...post._doc,
-        ...post,
-        question: questionWithOptions.filter(
-          (question) => post._id.toString() === question.pollId.toString()
-        )[0],
-      };
-    });
+    let allposts =
+      obj.key === "TAGGED"
+        ? await newTaggedPosts.map((post) => {
+            return {
+              ...post,
+              question: questionWithOptions.filter(
+                (question) => post._id.toString() === question.pollId.toString()
+              )[0],
+            };
+          })
+        : await posts.map((post) => {
+            return {
+              ...post,
+              question: questionWithOptions.filter(
+                (question) => post._id.toString() === question.pollId.toString()
+              )[0],
+            };
+          });
 
-    let newAll = await allposts.map((post) => {
-      return {
-        ...post,
-        voters: pollVotes.filter(
-          (vote) => vote.pollId.toString() === post._id.toString()
-        ),
-      };
-    });
-    callback(null, newAll);
+    // let newAll = await allposts.map((post) => {
+    //   return {
+    //     ...post,
+    //     voters: pollVotes.filter(
+    //       (vote) => vote.pollId.toString() === post._id.toString()
+    //     ),
+    //   };
+    // });
+    // console.log(newAll);
+    // callback(null, newAll);
+    callback(null, allposts);
   };
 
   update = async (obj, callback) => {
@@ -431,10 +675,10 @@ class PollPostModel {
         let increament = (await obj.vote)
           ? { $inc: { likes: 1 } }
           : { $inc: { dislikes: 1 } };
-        console.log(vote[0].createdBy);
+        // console.log(vote[0]._id);
         await postModel
           .findByIdAndUpdate(obj.pollId, {
-            $push: { votes: vote[0].createdBy },
+            $push: { votes: vote[0]._id },
           })
           .session(session);
         await postModel
@@ -466,8 +710,21 @@ class PollPostModel {
           await voteModel
             .findOneAndRemove({ pollId: obj.pollId })
             .session(session);
+
           await postModel
             .findByIdAndUpdate(obj.pollId, decrement)
+            .session(session);
+          // console.log(obj);
+          await postModel
+            .findByIdAndUpdate(
+              obj.pollId,
+              {
+                $pull: {
+                  votes: new mongoose.Types.ObjectId(post._id),
+                },
+              },
+              { new: true }
+            )
             .session(session);
           await callback(null, "You have removed your vote !");
         }
@@ -658,7 +915,9 @@ class PollPostModel {
   };
 
   trendingPosts = async (obj, callback) => {
-    let data = await postModel.find().sort("-createdAt");
+    let query = obj.location ? { location: obj.location } : {};
+
+    let data = await postModel.find(query).sort("-createdAt");
     let { trendingPosts, valuesPerTenMin } = await trendCalculator(data);
     // console.log(trendingPosts);
     let newData = await normalizedPosts(trendingPosts, valuesPerTenMin);

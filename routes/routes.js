@@ -4,6 +4,8 @@ const userController = require("../controller/userController");
 const authentication = require("../middleware/middleware");
 const hashtagController = require("../controller/hashtagController");
 const tagController = require("../controller/tagController");
+const notificationController = require("../controller/notificationController");
+const savePostController = require("../controller/savePostController");
 
 route.post(
   "/pollpost",
@@ -129,4 +131,32 @@ route.get(
   tagController.trendingPostsController
 );
 
+/**
+ * Notifications
+ */
+
+route.get(
+  "/notifications",
+  authentication.authenticateUser,
+  notificationController.readNotificationsController
+);
+route.put(
+  "/view/:notificationId",
+  authentication.authenticateUser,
+  notificationController.viewNotificationController
+);
+
+/**
+ * Poll post save
+ */
+route.post(
+  "/savepost",
+  authentication.authenticateUser,
+  savePostController.savePostController
+);
+route.delete(
+  "/unsavepost",
+  authentication.authenticateUser,
+  savePostController.unsavePostController
+);
 module.exports = route;

@@ -50,7 +50,7 @@ function getPostDuration(time) {
   const currentTime = new Date();
   const diff =
     (currentTime.getTime() - new Date(time).getTime()) / 1000 / (60 * 60);
-  console.log(currentTime.getTime(), new Date(time).getTime());
+  // console.log(currentTime.getTime(), new Date(time).getTime());
   //   console.log(((currentTime.getTime() - new Date(time).getTime()) / (1000 * 60 * 60)) % 24);
   //   console.log(Math.abs(Math.round(diff)));
   return Math.abs(Math.round(diff));
